@@ -1,0 +1,26 @@
+﻿@model TeacherDto
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/Images/@Model.ImageUrl" class="m-1" style="height:100px; width:100px;">
+               <div class="d-grid gap-1 mb-3">
+                    <button class="btn btn-warning btn-sm me-md-2 ms-2 mt-2" type="button">Detay Gör</button>
+                <button class="btn btn-primary btn-sm  me-md-2 mt-2 ms-2" type="button">Ders Al</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+               @foreach (var branch in Model.Branch)
+                {
+                    <h6 href="#" class="d-inline btn btn-link">@branch.Name</h6>
+                }
+                
+                <h6 class="text-danger">@($"{Model.FirstName} {Model.LastName}")</h6>
+                <h6 class="dislay-6">@Model.UniverstyGraduatedFrom</h6>
+                <p>Açıklama: @Model.Description</p>
+                <h6 class="text-end">@Model.Location</h6>
+             
+            </div>
+        </div>
+    </div>
+</div>

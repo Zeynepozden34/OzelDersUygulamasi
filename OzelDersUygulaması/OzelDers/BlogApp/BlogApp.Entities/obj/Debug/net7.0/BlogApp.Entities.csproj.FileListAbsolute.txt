@@ -1,0 +1,15 @@
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\bin\Debug\net7.0\BlogApp.Entities.deps.json
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\bin\Debug\net7.0\BlogApp.Entities.dll
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\bin\Debug\net7.0\BlogApp.Entities.pdb
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\bin\Debug\net7.0\BlogApp.Shared.dll
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\bin\Debug\net7.0\BlogApp.Shared.pdb
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.csproj.AssemblyReference.cache
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.AssemblyInfoInputs.cache
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.AssemblyInfo.cs
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.csproj.CopyComplete
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.dll
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\refint\BlogApp.Entities.dll
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\BlogApp.Entities.pdb
+C:\Users\Casper\Documents\GitHub\EkimNBUYDersler\Week_10\06-12-2022\BlogApp\BlogApp.Entities\obj\Debug\net7.0\ref\BlogApp.Entities.dll

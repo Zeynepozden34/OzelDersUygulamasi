@@ -1,0 +1,102 @@
+﻿@using BlogApp.Shared.Utilities.Result.ComplexTypes
+@using BlogApp.Entities.Dtos
+@model ArticleListDto
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Makaleler Anasayfa";
+}
+@if (Model.ResultStatus == ResultStatus.Success)
+{
+    @*Makaleler listelenecek*@
+
+    <h1 class="mt-4">Admin Makaleler</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Makaleler</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Makaleler
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="categoriesTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Kategori</th>
+                            <th>Yazar</th>
+                            <th>Başlık</th>
+                            <th>Tarih</th>
+                            <th>Görüntülenme</th>
+                            <th>Yorum</th>
+                            <th>Aktif mi?</th>
+                            <th>Silinmiş mi?</th>
+                            <th>Not</th>
+                            <th>Oluşturulma Tarihi</th>
+                            <th>Oluşturan Kullanıcı</th>
+                            <th>Son Düzenlenme Tarihi</th>
+                            <th>Son Düzenleyen Kullanıcı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var article in Model.Articles)
+                        {
+                            <tr>
+                                <td>@article.Id</td>
+                                <td>@article.Category.Name</td>
+                                <td>@article.User.UserName</td>
+                                <td>@article.Title</td>
+                                <td>@article.Date</td>
+                                <td>@article.ViewsCount</td>
+                                <td>@article.CommentCount</td>
+                                <td>@article.IsActive</td>
+                                <td>@article.IsDeleted</td>
+                                <td>@article.Note</td>
+                                <td>@article.CreatedDate.ToShortDateString()</td>
+                                <td>@article.CreatedByName</td>
+                                <td>@article.ModifiedDate.ToShortDateString()</td>
+                                <td>@article.ModifiedByName</td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#categoriesTable').DataTable({
+
+                dom: "<'row'<'col-sm-3'l><'col-sm-6 text-center'B><'col-sm-3'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: [
+                    {
+                        text: 'Ekle',
+                        action: function (e, dt, node, config) {
+                            alert('Ekle butonuna tıklandı');
+                        },
+                        className: 'btn btn-success'
+                    },
+                    {
+                        text: 'Yenile',
+                        action: function (e, dt, node, config) {
+                            alert('Yenile butonuna tıklandı');
+                        },
+                        className: 'btn btn-warning'
+                    }
+                ],
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.1/i18n/tr.json'
+                }
+            });
+        })
+    </script>
+}
