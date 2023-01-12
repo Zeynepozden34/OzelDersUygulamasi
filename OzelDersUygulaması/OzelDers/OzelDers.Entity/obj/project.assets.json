@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDers\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
       "projectName": "OzelDers.Entity",
-      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDers\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
+      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
       "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDers\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\obj\\",
+      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",

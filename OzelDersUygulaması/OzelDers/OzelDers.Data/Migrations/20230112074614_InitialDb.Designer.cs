@@ -11,7 +11,7 @@ using OzelDers.Data.Concrete.EfCore.Contexts;
 namespace OzelDers.Data.Migrations
 {
     [DbContext(typeof(OzelDersContext))]
-    [Migration("20230110085011_InitialDb")]
+    [Migration("20230112074614_InitialDb")]
     partial class InitialDb
     {
         /// <inheritdoc />
@@ -901,7 +901,7 @@ namespace OzelDers.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("OzelDers.Entity.Concrete.Teacher", "Teacher")
-                        .WithMany()
+                        .WithMany("StudentAndTeachers")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -949,6 +949,8 @@ namespace OzelDers.Data.Migrations
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Teacher", b =>
                 {
+                    b.Navigation("StudentAndTeachers");
+
                     b.Navigation("TeacherAndBranches");
                 });
 #pragma warning restore 612, 618

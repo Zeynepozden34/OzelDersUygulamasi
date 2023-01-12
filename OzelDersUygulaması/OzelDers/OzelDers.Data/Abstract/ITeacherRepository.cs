@@ -12,5 +12,6 @@ namespace OzelDers.Data.Abstract
         Task<List<Teacher>> GetByIdBranch(int id);
         Task<List<Teacher>> GetHomePageTeachersAsync();
         Task<List<Teacher>> GetTeacherByBranchAsync(string branch);
+        Task<List<Teacher>> GetTeacherWithAll();
     }
 }

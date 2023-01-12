@@ -1,0 +1,32 @@
+﻿@model List<TeacherListDto>
+<h1>Öğretmenler</h1>
+<hr />
+
+<div class="d-inline">
+    <div class="row">
+        @foreach (var teacher in Model)
+        {
+            <div class="col-4">
+                <div class="card mb-5" style="width: 18rem;">
+                    <img src="/Images/@teacher.ImageUrl" class="card-img-top" style="height:200px; width:286px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">@($"{teacher.FirstName} {teacher.LastName}")</h5>
+                        @foreach (var branch in teacher.Branch)
+                        {
+                            <h6 class="d-inline">@branch.Name</h6>
+                        }
+                        <h6 class="dislay-6">@teacher.UniverstyGraduatedFrom</h6>
+                        <p>Açıklama: @teacher.Description</p>
+                        <h6 class="">@teacher.Location</h6>
+                        <a href="#" class="btn btn-primary">Detay Gör</a>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+    </div>
+</div>
+
+
+

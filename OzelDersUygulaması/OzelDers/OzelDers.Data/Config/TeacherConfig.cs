@@ -63,6 +63,7 @@ namespace OzelDers.Data.Config
             builder.Property(t => t.Url)
                 .IsRequired()
                 .HasMaxLength(200);
+            
 
             builder.ToTable("Teachers");
 
@@ -83,6 +84,7 @@ namespace OzelDers.Data.Config
                     ImageUrl = "20.png",
                     Location = "Toronto/Canada",
                     Url="jackbrand"
+                    
                 },
                 new Teacher
                 {

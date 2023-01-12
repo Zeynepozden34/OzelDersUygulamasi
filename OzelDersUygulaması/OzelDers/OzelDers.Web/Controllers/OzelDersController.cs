@@ -23,7 +23,7 @@ namespace OzelDers.Web.Controllers
         }
         public async Task<IActionResult> TeacherList(string branchurl)
         {
-            List<Teacher> teachers = await _teacherManager.GetTe
+            List<Teacher> teachers = await _teacherManager.GetTeacherByBranchAsync(branchurl);
             List<TeacherDto> teacherDtos = new List<TeacherDto>();
             if (branchurl == null)
             {

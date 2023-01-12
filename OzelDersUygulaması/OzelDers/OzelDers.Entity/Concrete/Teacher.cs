@@ -16,6 +16,7 @@ namespace OzelDers.Entity.Concrete
         public bool IsFacetoFace { get; set; }
         public bool CertifiedTrainer { get; set; }
         public List<TeacherAndBranch> TeacherAndBranches { get; set; }
+        public List<StudentAndTeacher> StudentAndTeachers { get; set; }
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

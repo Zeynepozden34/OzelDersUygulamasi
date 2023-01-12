@@ -898,7 +898,7 @@ namespace OzelDers.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("OzelDers.Entity.Concrete.Teacher", "Teacher")
-                        .WithMany()
+                        .WithMany("StudentAndTeachers")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -946,6 +946,8 @@ namespace OzelDers.Data.Migrations
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Teacher", b =>
                 {
+                    b.Navigation("StudentAndTeachers");
+
                     b.Navigation("TeacherAndBranches");
                 });
 #pragma warning restore 612, 618
