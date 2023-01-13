@@ -24,14 +24,14 @@ namespace OzelDers.Web.Controllers
         public async Task<IActionResult> TeacherList(string branchurl)
         {
             List<Teacher> teachers = await _teacherManager.GetTeacherByBranchAsync(branchurl);
-            List<TeacherDto> teacherDtos = new List<TeacherDto>();
+            List<TeacherListDto> teacherDtos = new List<TeacherListDto>();
             if (branchurl == null)
             {
                 return NotFound();
             }
             foreach (var teacher in teachers)
             {
-                teacherDtos.Add(new TeacherDto
+                teacherDtos.Add(new TeacherListDto
                 {
                     Id = teacher.Id,
                     UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,

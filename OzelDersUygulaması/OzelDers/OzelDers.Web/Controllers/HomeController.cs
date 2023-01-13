@@ -36,10 +36,10 @@ public class HomeController : Controller
         #endregion
 
         List<Teacher> teachers  = await _teacherManager.GetHomePageTeachersAsync();
-        List<TeacherDto> teacherDtos = new List<TeacherDto>();
+        List<TeacherListDto> teacherDtos = new List<TeacherListDto>();
         foreach (var teacher in teachers)
         {
-            teacherDtos.Add(new TeacherDto
+            teacherDtos.Add(new TeacherListDto
             {
                 Id = teacher.Id,
                 UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,

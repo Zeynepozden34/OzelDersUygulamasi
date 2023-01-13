@@ -1,9 +1,97 @@
-﻿@model List<TeacherListDto>
-<h1 class="text-danger">ÖĞRETMEN BİLGİLERİ</h1>
+﻿@model TeacherDto
+<h1 class="text-danger">@($"{Model.FirstName}{Model.LastName}")</h1>
 
 <hr />
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@($"{Model.FirstName}{Model.LastName}")</h5>
+        @foreach (var branch in Model.Branch)
+        {
+            <a href="#" class="btn btn-link p-0 mb-3">@branch.Name</a>
+        }
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">@Model.Description</li>
+        <li class="list-group-item">@($"{Model.HourlyPrice:C2}")</li>
+        <li class="list-group-item">A third item</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
 
-<table class="table table-responsive table-bordered" asp-area="Admin" asp-controller="Teacher" asp-action="TeacherDetails">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4 text-center">
+                @* Resim gelecek *@
+                <img src="/images/@Model.ImageUrl">
+            </div>
+            <div class="col-8">
+                @* Diğer detaylar gelecek *@
+                <h1 class="card-title display-6">@($"{Model.FirstName}{Model.LastName}")</h1>
+                @foreach (var branch in Model.Branch)
+                {
+                    <a href="#" class="btn btn-link p-0 mb-3">@branch.Name</a>
+                }
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text">@($"{Model.HourlyPrice:C2}")</p>
+                <p>@Model.Age</p>
+
+                <p>@Model.Email</p>
+                <p>@Model.Description</p>
+                <p>@Model.UniverstyGraduatedFrom</p>
+                <p>@Model.CertifiedTrainer</p>
+                <p>@($"{Model.HourlyPrice:C2}")</p>
+                <p>@Model.Location</p>
+                @if (Model.Students != null)
+                {
+                    @foreach (var student in Model.Students)
+                    {
+                        <p class="nav-link text-black">@($"{Model.FirstName} {Model.LastName}")</p>
+
+                    }
+                }
+
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+@*<table class="table table-responsive table-bordered" asp-area="Admin" asp-controller="Teacher" asp-action="TeacherDetails">
     <thead>
         <tr>
             <th>Id</th>
@@ -21,41 +109,48 @@
         </tr>
     </thead>
     <tbody>
-      @foreach (var teacher in Model)
-        {
+    
             <tr>
-                <td>@teacher.Id</td>
+                <td>@Model.Id</td>
                 <td>
-                    <img src="/images/@teacher.ImageUrl" width="90" height="80" />
+                <img src="/images/@Model.ImageUrl" width="90" height="80" />
                 </td>
-                <td>@($"{teacher.FirstName}{teacher.LastName}")</td>
+            <td>@($"{Model.FirstName}{Model.LastName}")</td>
 
-                @foreach (var branch in teacher.Branch)
+            @foreach (var branch in Model.Branch)
                 {
                     <td class="d-grid">@branch.Name</td>
                 }
 
-                <td>@teacher.Age</td>
+            <td>@Model.Age</td>
 
-                <td>@teacher.Email</td>
-                <td>@teacher.Description</td>
-                <td>@teacher.UniverstyGraduatedFrom</td>
-                <td>@teacher.CertifiedTrainer</td>
-                <td>@($"{teacher.HourlyPrice:C2}")</td>
-                <td>@teacher.Location</td>
-                @if (teacher.Students!=null)
+            <td>@Model.Email</td>
+            <td>@Model.Description</td>
+            <td>@Model.UniverstyGraduatedFrom</td>
+            <td>@Model.CertifiedTrainer</td>
+            <td>@($"{Model.HourlyPrice:C2}")</td>
+            <td>@Model.Location</td>
+            @if (Model.Students != null)
                 {
-                    @foreach (var student in teacher.Students)
+                @foreach (var student in Model.Students)
                     {
-                        <td class="nav-link text-black">@($"{teacher.FirstName} {teacher.LastName}")</td>
+                    <td class="nav-link text-black">@($"{Model.FirstName} {Model.LastName}")</td>
 
                     }
                 }
-              
+
 
             </tr>
-        }
-           
-      
+        
+
+
     </tbody>
 </table>
+
+
+
+
+
+
+
+*@

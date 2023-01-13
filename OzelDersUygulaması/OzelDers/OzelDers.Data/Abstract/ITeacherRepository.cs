@@ -13,6 +13,6 @@ namespace OzelDers.Data.Abstract
         Task<List<Teacher>> GetHomePageTeachersAsync();
         Task<List<Teacher>> GetTeacherByBranchAsync(string branch);
         Task<List<Teacher>> GetTeacherWithAll();
-        Task<List<Teacher>> GetTeacherDetailsByUrlAsync(string teacherUrl);
+        Task<Teacher> GetTeacherDetailsByUrlAsync(string url);
     }
 }

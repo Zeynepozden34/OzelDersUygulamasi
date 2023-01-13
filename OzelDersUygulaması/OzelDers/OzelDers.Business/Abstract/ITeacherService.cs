@@ -17,7 +17,7 @@ namespace OzelDers.Business.Abstract
         Task<List<Teacher>> GetHomePageTeachersAsync();
         Task<List<Teacher>> GetTeacherByBranchAsync(string branch);
         Task<List<Teacher>> GetTeacherWithAll(); // Teacherları branş ve öğrencisiyle getirecek.
-        Task<List<Teacher>> GetTeacherDetailsByUrlAsync(string teacherUrl); // Öğretmen Detayları getirilecek
+        Task<Teacher> GetTeacherDetailsByUrlAsync(string url); // Öğretmen Detayları getirilecek
 
 
 

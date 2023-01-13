@@ -49,7 +49,7 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
             return await teachers.ToListAsync();
         }
 
-        public async Task<List<Teacher>> GetTeacherDetailsByUrlAsync(string teacherUrl)
+        public async Task<Teacher> GetTeacherDetailsByUrlAsync(string url)
         {
             return await OzelDersContext
                .Teachers
@@ -57,7 +57,7 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                .ThenInclude(tab => tab.Branch)
                .Include(t => t.StudentAndTeachers)
                .ThenInclude(tas => tas.Student)
-               .ToListAsync();
+               .FirstOrDefaultAsync();
         }
 
         public async  Task<List<Teacher>> GetTeacherWithAll()

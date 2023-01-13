@@ -21,12 +21,12 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             List<Teacher> teachers = await _teacherManager.GetTeacherWithAll();
-            List<TeacherListDto> teacherListDtos = new List<TeacherListDto>();
+            List<TeacherDto> teacherListDtos = new List<TeacherDto>();
             {
-                
+
                 foreach (var teacher in teachers)
                 {
-                    teacherListDtos.Add(new TeacherListDto
+                    teacherListDtos.Add(new TeacherDto
                     {
                         Id = teacher.Id,
                         UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
@@ -56,42 +56,35 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             return View(teacherListDtos);
 
         }
-        public async Task<IActionResult> TeacherDetails(string teacherUrl)
+        public async Task<IActionResult> TeacherDetails(string url)
         {
 
-            List<Teacher> teachers = await _teacherManager.GetTeacherDetailsByUrlAsync(teacherUrl);
-            List<TeacherListDto> teacherListDtos = new List<TeacherListDto>();
+            var teacher = await _teacherManager.GetTeacherDetailsByUrlAsync(url);
+            TeacherDto teacherListDtos = new TeacherDto
             {
-
-                foreach (var teacher in teachers)
-                {
-                    teacherListDtos.Add(new TeacherListDto
-                    {
-                        Id = teacher.Id,
-                        UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
-                        HourlyPrice = teacher.HourlyPrice,
-                        IsFacetoFace = teacher.IsFacetoFace,
-                        CertifiedTrainer = teacher.CertifiedTrainer,
-                        Email = teacher.Email,
-                        FirstName = teacher.FirstName,
-                        LastName = teacher.LastName,
-                        Description = teacher.Description,
-                        Age = teacher.Age,
-                        Gender = teacher.Gender,
-                        ImageUrl = teacher.ImageUrl,
-                        Location = teacher.Location,
-                        Url = teacher.Url,
-                        Branch = teacher
-                            .TeacherAndBranches
-                            .Select(tab => tab.Branch)
-                            .ToList(),
-                        Students = teacher.StudentAndTeachers
-                        .Select(tab => tab.Student)
-                        .ToList()
-                    });
-                };
-
-            }
+                Id = teacher.Id,
+                UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
+                HourlyPrice = teacher.HourlyPrice,
+                IsFacetoFace = teacher.IsFacetoFace,
+                CertifiedTrainer = teacher.CertifiedTrainer,
+                Email = teacher.Email,
+                FirstName = teacher.FirstName,
+                LastName = teacher.LastName,
+                Description = teacher.Description,
+                Age = teacher.Age,
+                Gender = teacher.Gender,
+                ImageUrl = teacher.ImageUrl,
+                Location = teacher.Location,
+                Url = teacher.Url,
+                Branch = teacher
+                    .TeacherAndBranches
+                    .Select(tab => tab.Branch)
+                    .ToList(),
+                Students = teacher
+                    .StudentAndTeachers
+                    .Select(tas => tas.Student)
+                    .ToList()
+            };
             return View(teacherListDtos);
         }
     }

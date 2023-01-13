@@ -155,7 +155,6 @@ C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\
 C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\obj\Debug\net7.0\OzelDers.Web.csproj.CopyComplete
 C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\obj\Debug\net7.0\OzelDers.Web.genruntimeconfig.cache
 C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\obj\Debug\net7.0\ref\OzelDers.Web.dll
-C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Casper\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Casper\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\bin\Debug\net7.0\appsettings.json
 C:\Users\Casper\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\bin\Debug\net7.0\OzelDers.Web.staticwebassets.runtime.json
