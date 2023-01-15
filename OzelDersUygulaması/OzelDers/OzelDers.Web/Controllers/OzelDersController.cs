@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OzelDers.Business.Abstract;
-using OzelDers.Data.Abstract;
+using OzelDers.Core;
 using OzelDers.Entity.Concrete;
 using OzelDers.Web.Models;
+
 
 namespace OzelDers.Web.Controllers
 {
@@ -39,6 +40,7 @@ namespace OzelDers.Web.Controllers
                     IsFacetoFace = teacher.IsFacetoFace,
                     CertifiedTrainer = teacher.CertifiedTrainer,
                     Email = teacher.Email,
+                    Phone= teacher.Phone,
                     FirstName = teacher.FirstName,
                     LastName = teacher.LastName,
                     Description = teacher.Description,
@@ -55,6 +57,37 @@ namespace OzelDers.Web.Controllers
                 });
             }
             return View(teacherDtos);
+        }
+        public async Task<IActionResult> HomeTeacherDetails(string url)
+        {
+            if (url == null)
+            {
+                return NotFound();
+            }
+            var teacher = await _teacherManager.GetTeacherDetailsByUrlAsync(url);
+            HomeTeacherDetailsDto homeTeacherDetailsDtos = new HomeTeacherDetailsDto
+            {
+                Id = teacher.Id,
+                UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
+                HourlyPrice = teacher.HourlyPrice,
+                IsFacetoFace = teacher.IsFacetoFace,
+                CertifiedTrainer = teacher.CertifiedTrainer,
+                Email = teacher.Email,
+                Phone= teacher.Phone,
+                FirstName = teacher.FirstName,
+                LastName = teacher.LastName,
+                Description = teacher.Description,
+                Age = teacher.Age,
+                Gender = teacher.Gender,
+                ImageUrl = teacher.ImageUrl,
+                Location = teacher.Location,
+                Url = Jobs.InitUrL(teacher.FirstName),
+                Branch = teacher
+                    .TeacherAndBranches
+                    .Select(tab => tab.Branch)
+                    .ToList(),
+            };
+            return View(homeTeacherDetailsDtos);
         }
 
     }

@@ -4,6 +4,7 @@
     <a class="list-group-item text-primary" asp-controller="Home" asp-action="Index">Dersler</a>
     @foreach (var branch in Model)
     {
+
         <a class="list-group-item list-group-item-action" asp-controller="OzelDers" asp-action="TeacherList" asp-route-branchurl="@branch.Url">@branch.Name</a>
     }
 </div>

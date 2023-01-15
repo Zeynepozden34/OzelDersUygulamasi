@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {}
+    "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {
+    "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj",
         "projectName": "OzelDers.Business",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\obj\\",
+        "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj",
+        "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj": {
-                "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj"
+              "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj": {
+                "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj"
               }
             }
           }
@@ -63,24 +64,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj": {
+    "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj",
         "projectName": "OzelDers.Data",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\obj\\",
+        "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\OzelDers.Data.csproj",
+        "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -89,14 +90,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj": {
-                "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj"
+              "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj": {
+                "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj"
               }
             }
           }
@@ -138,24 +140,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj": {
+    "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
         "projectName": "OzelDers.Entity",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\obj\\",
+        "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\OzelDers.Entity.csproj",
+        "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -164,6 +166,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -203,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

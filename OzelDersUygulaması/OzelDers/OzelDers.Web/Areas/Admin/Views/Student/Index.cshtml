@@ -1,0 +1,45 @@
+﻿@model List<StudentListDto>
+<h1>Öğrenciler</h1>
+<hr />
+
+<div class="d-inline">
+    <div class="row">
+        @foreach (var student in Model)
+        {
+            <div class="col-4">
+                <div class="card mb-5" style="width: 18rem;">
+                    <img src="/Images/@student.ImageUrl" class="card-img-top" style="height:200px; width:286px;">
+                    <div class="card-body">
+
+                        <h5 class="text-black">@($"{student.FirstName} {student.LastName}")</h5>
+                        <p class="text-danger d-inline">Email: <p class="d-inline">@student.Email</p></p>
+                        <p class="text-danger d-inline">Telrfon No: <p class="d-inline">@student.Phone</p></p>
+                        <p class="text-danger d-inline">Açıklama: <p class="d-inline">@student.Description</p></p>
+                        <p class="text-danger d-inline">Yaş: <p class="text-black d-inline">@student.Age</p></p>
+                        <p class="text-danger d-inline">Lokasyon: <p class="d-inline">@student.Location</p></p>
+                        <p class="text-danger d-inline">
+                            Öğretmenler:
+                            @if (student.Teachers != null)
+                            {
+                                @foreach (var teacher in student.Teachers)
+                                {
+                                    <a asp-area="Admin" asp-controller="Student" asp-action="StudentDetails" class="m-1 text-black  text-decoration-none d-inline">@($"{teacher.FirstName} {teacher.LastName}")</a>
+
+                                }
+
+                            }
+                        <p class="m-3">
+                            <a asp-area="Admin" asp-controller="Student" asp-action="Update" class="btn btn-primary">Düzenle</a>
+                            <a asp-area="Admin" asp-controller="Student" asp-action="Delete" class="btn btn-danger m-2">Sil</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+    </div>
+</div>
+
+
+

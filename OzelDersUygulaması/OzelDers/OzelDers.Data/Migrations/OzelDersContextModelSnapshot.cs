@@ -305,6 +305,12 @@ namespace OzelDers.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(75)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("FirstName")
@@ -335,12 +341,21 @@ namespace OzelDers.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Url")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Students", (string)null);
 
@@ -351,12 +366,14 @@ namespace OzelDers.Data.Migrations
                             Age = 17,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lise Öğrencisi",
+                            Email = "selimdurmus@ogrenci.com",
                             FirstName = "Selim",
                             Gender = "erkek",
                             ImageUrl = "1.png",
                             IsDeleted = false,
                             LastName = "Durmuş",
                             Location = "Üsküdar/İstanbul",
+                            Phone = "0547 888 1520",
                             Url = "selimdurmus"
                         },
                         new
@@ -365,12 +382,14 @@ namespace OzelDers.Data.Migrations
                             Age = 18,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Hazırlık Öğrencisi",
+                            Email = "defnegormus@ogrenci.com",
                             FirstName = "Defne",
                             Gender = "kız",
                             ImageUrl = "2.png",
                             IsDeleted = false,
                             LastName = "Görmüş",
                             Location = "Çankaya/Ankara",
+                            Phone = "0547 888 1527",
                             Url = "defnegormus"
                         },
                         new
@@ -379,13 +398,15 @@ namespace OzelDers.Data.Migrations
                             Age = 21,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Öğrencisi",
+                            Email = "hazalkara@ogrenci.com",
                             FirstName = "Hazal",
                             Gender = "kız",
                             ImageUrl = "3.png",
                             IsDeleted = false,
                             LastName = "Kara",
                             Location = "Çukurova/Adana",
-                            Url = "selimdurmus"
+                            Phone = "0547 555 1520",
+                            Url = "hazalkara"
                         },
                         new
                         {
@@ -393,13 +414,15 @@ namespace OzelDers.Data.Migrations
                             Age = 23,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Öğrencisi",
+                            Email = "gozdeceken@ogrenci.com",
                             FirstName = "Gözde",
                             Gender = "kız",
                             ImageUrl = "4.png",
                             IsDeleted = false,
-                            LastName = "Kama",
+                            LastName = "Çeken",
                             Location = "Bahçelievler/İstanbul",
-                            Url = "selimdurmus"
+                            Phone = "0535 888 1520",
+                            Url = "gozdeceken"
                         },
                         new
                         {
@@ -407,13 +430,15 @@ namespace OzelDers.Data.Migrations
                             Age = 17,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lise Öğrencisi",
+                            Email = "huseyinkazanmış@ogrenci.com",
                             FirstName = "Hüseyin",
                             Gender = "erkek",
                             ImageUrl = "5.png",
                             IsDeleted = false,
                             LastName = "Kazanmış",
                             Location = "Küçükçekmece/İstanbul",
-                            Url = "selimdurmus"
+                            Phone = "0547 878 1520",
+                            Url = "huseyinkazanmıs"
                         },
                         new
                         {
@@ -421,13 +446,15 @@ namespace OzelDers.Data.Migrations
                             Age = 16,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lise Öğrencisi",
+                            Email = "bilaltelli@ogrenci.com",
                             FirstName = "Bilal",
                             Gender = "erkek",
                             ImageUrl = "6.png",
                             IsDeleted = false,
                             LastName = "Telli",
                             Location = "Bornova/İzmir",
-                            Url = "selimdurmus"
+                            Phone = "0547 888 1820",
+                            Url = "bilaltelli"
                         },
                         new
                         {
@@ -435,12 +462,14 @@ namespace OzelDers.Data.Migrations
                             Age = 15,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lise Öğrencisi",
+                            Email = "yunusdeniz@ogrenci.com",
                             FirstName = "Yunus",
                             Gender = "erkek",
                             ImageUrl = "7.png",
                             IsDeleted = false,
                             LastName = "Deniz",
                             Location = "İzmit/Kocaeli",
+                            Phone = "0547 456 1520",
                             Url = "denizyunus"
                         },
                         new
@@ -449,12 +478,14 @@ namespace OzelDers.Data.Migrations
                             Age = 18,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Hazırlık Öğrencisi",
+                            Email = "cemrekıran@ogrenci.com",
                             FirstName = "Cemre",
-                            Gender = "erkek",
+                            Gender = "kadın",
                             ImageUrl = "8.png",
                             IsDeleted = false,
                             LastName = "Kıran",
                             Location = "Üsküdar/İstanbul",
+                            Phone = "0488 888 1520",
                             Url = "cemrekıran"
                         },
                         new
@@ -463,13 +494,15 @@ namespace OzelDers.Data.Migrations
                             Age = 19,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Öğrencisi",
+                            Email = "yusufgüzel@ogrenci.com",
                             FirstName = "Yusuf",
                             Gender = "erkek",
                             ImageUrl = "9.png",
                             IsDeleted = false,
                             LastName = "Güzel",
                             Location = "Yüreğir/Adana",
-                            Url = "selimdurmus"
+                            Phone = "0547 222 1520",
+                            Url = "yusufguzel"
                         },
                         new
                         {
@@ -477,13 +510,15 @@ namespace OzelDers.Data.Migrations
                             Age = 19,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Öğrencisi",
+                            Email = "harunbulut@ogrenci.com",
                             FirstName = "Harun",
                             Gender = "erkek",
                             ImageUrl = "10.png",
                             IsDeleted = false,
                             LastName = "Bulut",
                             Location = "İskenderun/Hatay",
-                            Url = "selimdurmus"
+                            Phone = "0547 888 1827",
+                            Url = "harunbulut"
                         },
                         new
                         {
@@ -491,13 +526,15 @@ namespace OzelDers.Data.Migrations
                             Age = 20,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Üniversite Öğrencisi",
+                            Email = "yıldızmutlu@ogrenci.com",
                             FirstName = "Yıldız",
                             Gender = "kız",
                             ImageUrl = "11.png",
                             IsDeleted = false,
                             LastName = "Mutlu",
                             Location = "Pendik/İstanbul",
-                            Url = "selimdurmus"
+                            Phone = "0547 888 2282",
+                            Url = "yıldızmutlu"
                         });
                 });
 
@@ -621,8 +658,9 @@ namespace OzelDers.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("StudentId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("UniverstyGraduatedFrom")
                         .IsRequired()
@@ -634,9 +672,12 @@ namespace OzelDers.Data.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("StudentId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Teachers", (string)null);
 
@@ -657,6 +698,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = false,
                             LastName = "Brand",
                             Location = "Toronto/Canada",
+                            Phone = "0543 755 8282",
                             UniverstyGraduatedFrom = "Cambridge University",
                             Url = "jackbrand"
                         },
@@ -676,6 +718,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = true,
                             LastName = "Özer",
                             Location = "Avcılar/İstanbul",
+                            Phone = "0543 855 8282",
                             UniverstyGraduatedFrom = "İstanbul Üniversitesi",
                             Url = "sevgiozer"
                         },
@@ -695,6 +738,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = true,
                             LastName = "Kuru",
                             Location = "Avcılar/İstanbul",
+                            Phone = "0543 455 8282",
                             UniverstyGraduatedFrom = "Fırat Üniversitesi",
                             Url = "denizkuru"
                         },
@@ -705,8 +749,8 @@ namespace OzelDers.Data.Migrations
                             CertifiedTrainer = true,
                             DateAdded = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Kimya dersi verilir.",
-                            Email = "selimgoren@ozelders.com",
-                            FirstName = "Selim",
+                            Email = "fıratgoren@ozelders.com",
+                            FirstName = "Fırat",
                             Gender = "erkek",
                             HourlyPrice = 650,
                             ImageUrl = "23.png",
@@ -714,8 +758,9 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = true,
                             LastName = "Gören",
                             Location = "Çankaya/Ankara",
+                            Phone = "0543 755 4545",
                             UniverstyGraduatedFrom = "Marmara Üniversitesi",
-                            Url = "selimgören"
+                            Url = "fıratgören"
                         },
                         new
                         {
@@ -733,6 +778,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = true,
                             LastName = "Eren",
                             Location = "Bornova/İzmir",
+                            Phone = "0535 755 8282",
                             UniverstyGraduatedFrom = "Fırat Üniversitesi",
                             Url = "kemaleren"
                         },
@@ -752,6 +798,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = true,
                             LastName = "Susan",
                             Location = "Sefaköy/İstanbul",
+                            Phone = "0548 755 8282",
                             UniverstyGraduatedFrom = "İstanbul Üniversitesi",
                             Url = "melissusan"
                         },
@@ -771,6 +818,7 @@ namespace OzelDers.Data.Migrations
                             IsFacetoFace = false,
                             LastName = "Bilen",
                             Location = "Buca/İzmir",
+                            Phone = "0543 755 7235",
                             UniverstyGraduatedFrom = "Dokuz Eylül Üniversitesi",
                             Url = "defnebilen"
                         });
@@ -889,10 +937,19 @@ namespace OzelDers.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("OzelDers.Entity.Concrete.Student", b =>
+                {
+                    b.HasOne("OzelDers.Entity.Concrete.Identity.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("OzelDers.Entity.Concrete.StudentAndTeacher", b =>
                 {
                     b.HasOne("OzelDers.Entity.Concrete.Student", "Student")
-                        .WithMany()
+                        .WithMany("StudentAndTeachers")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -910,9 +967,11 @@ namespace OzelDers.Data.Migrations
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Teacher", b =>
                 {
-                    b.HasOne("OzelDers.Entity.Concrete.Student", null)
-                        .WithMany("Teachers")
-                        .HasForeignKey("StudentId");
+                    b.HasOne("OzelDers.Entity.Concrete.Identity.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.TeacherAndBranch", b =>
@@ -941,7 +1000,7 @@ namespace OzelDers.Data.Migrations
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Student", b =>
                 {
-                    b.Navigation("Teachers");
+                    b.Navigation("StudentAndTeachers");
                 });
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Teacher", b =>

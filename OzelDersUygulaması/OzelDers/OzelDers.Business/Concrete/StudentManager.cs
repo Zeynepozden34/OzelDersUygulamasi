@@ -40,6 +40,16 @@ namespace OzelDers.Business.Concrete
             return await _unitOfWork.Students.GetByIdAsync(id);
         }
 
+        public async Task<Student> GetStudentDetailsByUrlAsync(string url)
+        {
+            return await _unitOfWork.Students.GetStudentDetailsByUrlAsync(url);
+        }
+
+        public async Task<List<Student>> GetStudentWithTeacher()
+        {
+            return await _unitOfWork.Students.GetStudentWithTeacher();
+        }
+
         public void Update(Student student)
         {
             _unitOfWork.Students.Update(student);

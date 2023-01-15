@@ -44,6 +44,23 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/7.0.1": {
         "type": "package",
         "dependencies": {
@@ -430,6 +447,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -580,6 +610,19 @@
           "lib/netstandard2.0/System.CodeDom.dll": {}
         }
       },
+      "System.IO.Pipelines/5.0.2": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Memory/4.5.3": {
         "type": "package",
         "compile": {
@@ -641,6 +684,20 @@
         },
         "runtime": {
           "bin/placeholder/OzelDers.Business.dll": {}
+        }
+      },
+      "OzelDers.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/OzelDers.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OzelDers.Core.dll": {}
         }
       },
       "OzelDers.Data/1.0.0": {
@@ -727,6 +784,25 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/7.0.1": {
@@ -1232,6 +1308,36 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
       "sha512": "ilkvNhrTersLmIVAcDwwPqfhUFCg19Z1GVMvCSi3xk6Akq94f4qadLORQCq/T8+9JgMiPs+F/NECw5uauviaNw==",
       "type": "package",
@@ -1338,6 +1444,32 @@
         "ref/netstandard2.0/System.CodeDom.xml",
         "system.codedom.4.4.0.nupkg.sha512",
         "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO.Pipelines/5.0.2": {
+      "sha512": "Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
+      "type": "package",
+      "path": "system.io.pipelines/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.5.0.2.nupkg.sha512",
+        "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1470,6 +1602,11 @@
       "path": "../OzelDers.Business/OzelDers.Business.csproj",
       "msbuildProject": "../OzelDers.Business/OzelDers.Business.csproj"
     },
+    "OzelDers.Core/1.0.0": {
+      "type": "project",
+      "path": "../OzelDers.Core/OzelDers.Core.csproj",
+      "msbuildProject": "../OzelDers.Core/OzelDers.Core.csproj"
+    },
     "OzelDers.Data/1.0.0": {
       "type": "project",
       "path": "../OzelDers.Data/OzelDers.Data.csproj",
@@ -1484,27 +1621,28 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
-      "OzelDers.Business >= 1.0.0"
+      "OzelDers.Business >= 1.0.0",
+      "OzelDers.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABAH\\.nuget\\packages\\": {},
+    "C:\\Users\\Casper\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\OzelDers.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\OzelDers.Web.csproj",
       "projectName": "OzelDers.Web",
-      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\OzelDers.Web.csproj",
-      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\obj\\",
+      "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\OzelDers.Web.csproj",
+      "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1513,14 +1651,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj"
+            "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj": {
+              "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Business\\OzelDers.Business.csproj"
+            },
+            "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Core\\OzelDers.Core.csproj": {
+              "projectPath": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Core\\OzelDers.Core.csproj"
             }
           }
         }
@@ -1561,7 +1703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

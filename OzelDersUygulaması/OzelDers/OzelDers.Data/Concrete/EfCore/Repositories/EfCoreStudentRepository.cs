@@ -20,5 +20,24 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
         {
             get { return _context as OzelDersContext; }
         }
+
+        public async Task<List<Student>> GetStudentWithTeacher()
+        {
+            return await OzelDersContext
+                .Students
+                .Include(s => s.StudentAndTeachers)
+                .ThenInclude(st => st.Teacher)
+                .ToListAsync();
+        }
+
+        public async Task<Student> GetStudentDetailsByUrlAsync(string url)
+        {
+            return await OzelDersContext
+              .Students
+              .Include(s => s.StudentAndTeachers)
+              .ThenInclude(st => st.Teacher)
+              .FirstOrDefaultAsync();
+
+        }
     }
 }

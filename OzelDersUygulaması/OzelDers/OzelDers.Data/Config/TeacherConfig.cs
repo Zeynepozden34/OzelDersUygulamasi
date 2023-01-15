@@ -4,6 +4,7 @@ using OzelDers.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,6 +34,9 @@ namespace OzelDers.Data.Config
                .IsRequired()
                .HasMaxLength(75);
 
+            builder.Property(t => t.Phone)
+               .IsRequired();
+               
 
             builder.Property(t => t.FirstName)
                 .IsRequired()
@@ -76,6 +80,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = false,
                     CertifiedTrainer = true,
                     Email = "jackbrand@ozelders.com",
+                    Phone="0543 755 8282",
                     FirstName = "Jack",
                     LastName = "Brand",
                     Description = "Engish lessons are given.",
@@ -94,6 +99,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
                     Email = "sevgiozer@ozelders.com",
+                    Phone = "0543 855 8282",
                     FirstName = "Sevgi",
                     LastName = "Özer",
                     Description = "Fizik dersi verilir.",
@@ -112,6 +118,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
                     Email = "denizkuru@ozelders.com",
+                    Phone = "0543 455 8282",
                     FirstName = "Deniz",
                     LastName = "Kuru",
                     Description = "Matematik dersi verilir.",
@@ -129,15 +136,16 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 650,
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
-                    Email = "selimgoren@ozelders.com",
-                    FirstName = "Selim",
+                    Email = "fıratgoren@ozelders.com",
+                    Phone = "0543 755 4545",
+                    FirstName = "Fırat",
                     LastName = "Gören",
                     Description = "Kimya dersi verilir.",
                     Age = 30,
                     Gender = "erkek",
                     ImageUrl = "23.png",
                     Location = "Çankaya/Ankara",
-                    Url="selimgören"
+                    Url="fıratgören"
                 },
 
                 new Teacher
@@ -148,6 +156,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = true,
                     CertifiedTrainer = false,
                     Email = "kemaleren@ozelders.com",
+                    Phone = "0535 755 8282",
                     FirstName = "Kemal",
                     LastName = "Eren",
                     Description = "C# dersi verilir.",
@@ -166,6 +175,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
                     Email = "melissusan@ozelders.com",
+                    Phone = "0548 755 8282",
                     FirstName = "Melis",
                     LastName = "Susan",
                     Description = "Edebiyat dersi verilir.",
@@ -183,6 +193,7 @@ namespace OzelDers.Data.Config
                     IsFacetoFace = false,
                     CertifiedTrainer = true,
                     Email = "defnebilen@ozelders.com",
+                    Phone = "0543 755 7235",
                     FirstName = "Defne",
                     LastName = "Bilen",
                     Description = "Almanca dersi verilir.",

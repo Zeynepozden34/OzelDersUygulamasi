@@ -1,156 +1,58 @@
-﻿@model TeacherDto
+﻿@model TeacherDetailsDto
 <h1 class="text-danger">@($"{Model.FirstName}{Model.LastName}")</h1>
 
 <hr />
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+<div class="card mb-3">
+    <img src="/images/@Model.ImageUrl" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">@($"{Model.FirstName}{Model.LastName}")</h5>
+        <h5 class="card-title text-black fw-bold display-5">@($"{Model.FirstName}{Model.LastName}")</h5>
         @foreach (var branch in Model.Branch)
         {
-            <a href="#" class="btn btn-link p-0 mb-3">@branch.Name</a>
+            <p class="text-danger display-6 fw-bold" p-0 mb-3">@branch.Name</p>
         }
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">@Model.Description</li>
-        <li class="list-group-item">@($"{Model.HourlyPrice:C2}")</li>
-        <li class="list-group-item">A third item</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-4 text-center">
-                @* Resim gelecek *@
-                <img src="/images/@Model.ImageUrl">
-            </div>
-            <div class="col-8">
-                @* Diğer detaylar gelecek *@
-                <h1 class="card-title display-6">@($"{Model.FirstName}{Model.LastName}")</h1>
-                @foreach (var branch in Model.Branch)
-                {
-                    <a href="#" class="btn btn-link p-0 mb-3">@branch.Name</a>
-                }
-                <p class="card-text">@Model.Description</p>
-                <p class="card-text">@($"{Model.HourlyPrice:C2}")</p>
-                <p>@Model.Age</p>
-
-                <p>@Model.Email</p>
-                <p>@Model.Description</p>
-                <p>@Model.UniverstyGraduatedFrom</p>
-                <p>@Model.CertifiedTrainer</p>
-                <p>@($"{Model.HourlyPrice:C2}")</p>
-                <p>@Model.Location</p>
-                @if (Model.Students != null)
-                {
-                    @foreach (var student in Model.Students)
-                    {
-                        <p class="nav-link text-black">@($"{Model.FirstName} {Model.LastName}")</p>
-
-                    }
-                }
-
-              
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-@*<table class="table table-responsive table-bordered" asp-area="Admin" asp-controller="Teacher" asp-action="TeacherDetails">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Resim</th>
-            <th>Ad Soyad</th>
-            <th>Ders</th>
-            <th>Yaş</th>
-            <th>Email</th>
-            <th>Açıklama</th>
-            <th>Mezun Olduğu Okul</th>
-            <th>Sertifika</th>
-            <th>Saatlik Ücret</th>
-            <th>Lokasyon</th>
-            <th>Öğrenciler</th>
-        </tr>
-    </thead>
-    <tbody>
-    
-            <tr>
-                <td>@Model.Id</td>
-                <td>
-                <img src="/images/@Model.ImageUrl" width="90" height="80" />
-                </td>
-            <td>@($"{Model.FirstName}{Model.LastName}")</td>
-
-            @foreach (var branch in Model.Branch)
-                {
-                    <td class="d-grid">@branch.Name</td>
-                }
-
-            <td>@Model.Age</td>
-
-            <td>@Model.Email</td>
-            <td>@Model.Description</td>
-            <td>@Model.UniverstyGraduatedFrom</td>
-            <td>@Model.CertifiedTrainer</td>
-            <td>@($"{Model.HourlyPrice:C2}")</td>
-            <td>@Model.Location</td>
+        <p class="text-danger d-inline">Açıklama: <p class="d-inline">@Model.Description</p></p>
+        <p class="text-danger d-inline">Saatlik Ücret: <p class="d-inline text-black">@($"{Model.HourlyPrice:C2}")</p></p>
+        <p class="text-danger d-inline">Yaş: <p class="text-black d-inline">@Model.Age</p></p>
+        <p class="text-danger d-inline">Mail :<p class="d-inline">@Model.Email</p></p>
+        <p class="text-danger d-inline">Telefon No :<p class="d-inline">@Model.Phone</p></p>
+        <p class="text-danger d-inline">Mezun olduğu okul: <p class="d-inline">@Model.UniverstyGraduatedFrom</p></p>
+        <p class="text-danger d-inline">Onaylı Üye mi: <p class="d-inline">@Model.CertifiedTrainer</p></p>
+        <p class="text-danger d-inline">Lokasyon: <p class="d-inline">@Model.Location</p></p>
+        <p class="text-danger d-inline">
+            Öğrenciler:
             @if (Model.Students != null)
-                {
+            {
                 @foreach (var student in Model.Students)
-                    {
-                    <td class="nav-link text-black">@($"{Model.FirstName} {Model.LastName}")</td>
+                {
+                    <a asp-area="Admin" asp-controller="Student" asp-action="StudentDetails" class="m-1 text-black  text-decoration-none d-inline">@($"{student.FirstName} {student.LastName}")</a>
 
-                    }
                 }
+            }
+        </p>
+        <p class="m-3"><a asp-area="Admin" asp-controller="Teacher" asp-action="Update" class="btn btn-primary">Düzenle</a>
+            <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" class="btn btn-danger m-2">Sil</a>
+        </p>
 
-
-            </tr>
-        
-
-
-    </tbody>
-</table>
-
-
-
+    </div>
+</div>
 
 
 
 
-*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

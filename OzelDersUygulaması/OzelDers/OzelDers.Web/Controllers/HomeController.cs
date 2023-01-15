@@ -47,6 +47,7 @@ public class HomeController : Controller
                 IsFacetoFace = teacher.IsFacetoFace,
                 CertifiedTrainer = teacher.CertifiedTrainer,
                 Email = teacher.Email,
+                Phone=teacher.Phone,
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Description = teacher.Description,

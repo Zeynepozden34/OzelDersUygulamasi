@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OzelDers.Business\OzelDers.Business.csproj" />
+    <ProjectReference Include="..\OzelDers.Core\OzelDers.Core.csproj" />
   </ItemGroup>
 
 </Project>

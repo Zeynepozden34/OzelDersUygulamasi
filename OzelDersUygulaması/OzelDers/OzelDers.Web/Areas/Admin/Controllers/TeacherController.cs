@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OzelDers.Business.Abstract;
+using OzelDers.Core;
 using OzelDers.Entity.Concrete;
 using OzelDers.Web.Areas.Admin.Models.Dtos;
 
@@ -21,12 +22,12 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             List<Teacher> teachers = await _teacherManager.GetTeacherWithAll();
-            List<TeacherDto> teacherListDtos = new List<TeacherDto>();
+            List<TeacherListDto> teacherListDtos = new List<TeacherListDto>();
             {
 
                 foreach (var teacher in teachers)
                 {
-                    teacherListDtos.Add(new TeacherDto
+                    teacherListDtos.Add(new TeacherListDto
                     {
                         Id = teacher.Id,
                         UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
@@ -34,6 +35,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                         IsFacetoFace = teacher.IsFacetoFace,
                         CertifiedTrainer = teacher.CertifiedTrainer,
                         Email = teacher.Email,
+                        Phone= teacher.Phone,
                         FirstName = teacher.FirstName,
                         LastName = teacher.LastName,
                         Description = teacher.Description,
@@ -58,9 +60,12 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         }
         public async Task<IActionResult> TeacherDetails(string url)
         {
-
+            if (url == null)
+            {
+                return NotFound();
+            }
             var teacher = await _teacherManager.GetTeacherDetailsByUrlAsync(url);
-            TeacherDto teacherListDtos = new TeacherDto
+            TeacherDetailsDto teacherDetailsDtos = new TeacherDetailsDto
             {
                 Id = teacher.Id,
                 UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
@@ -68,6 +73,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 IsFacetoFace = teacher.IsFacetoFace,
                 CertifiedTrainer = teacher.CertifiedTrainer,
                 Email = teacher.Email,
+                Phone= teacher.Phone,
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Description = teacher.Description,
@@ -75,8 +81,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 Gender = teacher.Gender,
                 ImageUrl = teacher.ImageUrl,
                 Location = teacher.Location,
-                Url = teacher.Url,
-                Branch = teacher
+                Url = Jobs.InitUrL(teacher.FirstName),
+            Branch = teacher
                     .TeacherAndBranches
                     .Select(tab => tab.Branch)
                     .ToList(),
@@ -85,7 +91,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     .Select(tas => tas.Student)
                     .ToList()
             };
-            return View(teacherListDtos);
+            return View(teacherDetailsDtos);
         }
     }
 }
