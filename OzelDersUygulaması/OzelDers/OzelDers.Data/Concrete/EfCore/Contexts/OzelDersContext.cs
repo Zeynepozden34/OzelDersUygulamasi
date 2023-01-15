@@ -21,9 +21,9 @@ namespace OzelDers.Data.Concrete.EfCore.Contexts
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<TeacherAndBranch> TeacherAndBranches { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public OzelDersContext(DbContextOptions<OzelDersContext> options) : base(options)
         {
-            optionsBuilder.UseSqlite("Data Source=BlogApp.db");
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
