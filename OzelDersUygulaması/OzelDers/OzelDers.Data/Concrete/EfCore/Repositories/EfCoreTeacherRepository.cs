@@ -36,15 +36,15 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                 .ToListAsync();
         }
 
-        public async Task<List<Teacher>> GetTeacherByBranchAsync(string branch)
+        public async Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl)
         {
             var teachers = OzelDersContext.Teachers.AsQueryable();
-            if (branch != null)
+            if (branchurl != null)
             {
                 teachers = teachers
                     .Include(p => p.TeacherAndBranches)
                     .ThenInclude(pc => pc.Branch)
-                    .Where(p => p.TeacherAndBranches.Any(pc => pc.Branch.Url == branch));
+                    .Where(p => p.TeacherAndBranches.Any(pc => pc.Branch.Url == branchurl));
             }
             return await teachers.ToListAsync();
         }
@@ -53,6 +53,7 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
         {
             return await OzelDersContext
                .Teachers
+               .Where(t=>t.Url==url)
                .Include(t => t.TeacherAndBranches)
                .ThenInclude(tab => tab.Branch)
                .Include(t => t.StudentAndTeachers)

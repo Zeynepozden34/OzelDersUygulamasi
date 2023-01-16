@@ -53,7 +53,7 @@ namespace OzelDers.Core
             {
                 var extension = Path.GetExtension(image.FileName);
                 var randomName = $"{Guid.NewGuid()}{extension}";
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", randomName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images", randomName);
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
                     image.CopyTo(stream);

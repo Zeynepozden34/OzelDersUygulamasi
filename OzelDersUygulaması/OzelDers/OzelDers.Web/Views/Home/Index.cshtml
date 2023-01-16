@@ -15,7 +15,7 @@
             <div class="row">
                 @foreach (var teacherDto in Model)
                 {
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         @await Html.PartialAsync("_TeacherPartial", teacherDto)
                     </div>
                 }

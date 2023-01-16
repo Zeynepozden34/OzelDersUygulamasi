@@ -15,7 +15,7 @@ namespace OzelDers.Business.Abstract
         void Update(Teacher teacher);
         void Delete(Teacher teacher);
         Task<List<Teacher>> GetHomePageTeachersAsync();
-        Task<List<Teacher>> GetTeacherByBranchAsync(string branch);
+        Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl);
         Task<List<Teacher>> GetTeacherWithAll(); // Teacherları branş ve öğrencisiyle getirecek.
         Task<Teacher> GetTeacherDetailsByUrlAsync(string url); // Öğretmen Detayları getirilecek
 

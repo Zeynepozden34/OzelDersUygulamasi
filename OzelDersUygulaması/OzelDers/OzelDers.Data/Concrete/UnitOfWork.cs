@@ -38,9 +38,9 @@ namespace OzelDers.Data.Concrete
             throw new NotImplementedException();
         }
 
-        public Task SaveAsync()
+        public async Task SaveAsync()
         {
-            throw new NotImplementedException();
+           await _context.SaveChangesAsync();
         }
     }
 }

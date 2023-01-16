@@ -9,6 +9,7 @@ namespace OzelDers.Entity.Concrete.Identity
 {
     public class User : IdentityUser
     {
+      
 
     }
 }

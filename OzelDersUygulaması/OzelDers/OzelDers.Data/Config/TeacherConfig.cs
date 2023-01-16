@@ -17,18 +17,17 @@ namespace OzelDers.Data.Config
              builder.HasKey(t => t.Id);
             builder.Property(s => s.Id).ValueGeneratedOnAdd();
 
-            builder.Property(t => t.UniverstyGraduatedFrom)
-           .IsRequired()
+            builder.Property(t => t.UniverstyGraduatedFrom)           
            .HasMaxLength(100);
 
-            builder.Property<int>(t => t.HourlyPrice)
-              .IsRequired();
+            builder.Property<int>(t => t.HourlyPrice);
 
-            builder.Property<bool>(t => t.IsFacetoFace)
-                .IsRequired();
 
-            builder.Property<bool>(t => t.CertifiedTrainer)
-               .IsRequired();
+            builder.Property<bool>(t => t.IsFacetoFace);
+
+
+            builder.Property<bool>(t => t.CertifiedTrainer);
+
 
             builder.Property(t => t.Email)
                .IsRequired()

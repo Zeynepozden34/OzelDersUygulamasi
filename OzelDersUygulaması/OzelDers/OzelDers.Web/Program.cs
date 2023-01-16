@@ -75,10 +75,17 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
+app.MapControllerRoute(
+    name: "HomeTeacherDetails",
+    pattern: "teacher/{url?}",
+    defaults: new { controller = "OzelDers", action = "HomeTeacherDetails" }
+    );
+
 app.MapAreaControllerRoute(
     name: "Admin",
     areaName: "Admin",
-    pattern: "teacher/{url?}",
+    pattern: "teacheradmin/{url?}",
     defaults: new { controller = "Teacher", action = "TeacherDetails" }
     );
 
