@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wsM7vD9eys2YGik6yC1/ReafDJksWLTRZfViuFZCf8k=",
+  "Hash": "BOQGGzdjKLm/Hcg6cxqO+8fSCUzt91rJioto14DjuXo=",
   "Source": "OzelDers.Web",
   "BasePath": "_content/OzelDers.Web",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\06c43dab-3149-4e01-ae61-7d843c912899.png"
+    },
+    {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\072e9e1d-c096-4503-811a-b92426ecf84e.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/072e9e1d-c096-4503-811a-b92426ecf84e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\072e9e1d-c096-4503-811a-b92426ecf84e.jpg"
     },
     {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\1.png",
@@ -357,6 +374,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\29.png"
     },
     {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2bbf4afb-2a2b-45c0-80ab-cb1aa848ff0f.png",
       "SourceId": "OzelDers.Web",
       "SourceType": "Discovered",
@@ -406,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\34e53166-d073-47f3-9bc4-a65f79114d81.png"
+    },
+    {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg"
     },
     {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\4.png",
@@ -510,6 +561,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\6.png"
     },
     {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63c8303d-18b5-4d5b-8486-231494dcdc15.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/63c8303d-18b5-4d5b-8486-231494dcdc15.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\63c8303d-18b5-4d5b-8486-231494dcdc15.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png",
       "SourceId": "OzelDers.Web",
       "SourceType": "Discovered",
@@ -595,6 +663,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\757bae6a-011c-4c58-ba6c-051af4a90657.png"
     },
     {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\79477eba-b262-4a42-9cb9-e7fa64769653.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/79477eba-b262-4a42-9cb9-e7fa64769653.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\79477eba-b262-4a42-9cb9-e7fa64769653.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8.png",
       "SourceId": "OzelDers.Web",
       "SourceType": "Discovered",
@@ -610,6 +695,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\8.png"
+    },
+    {
+      "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8131b185-8529-4d92-828f-b4d9d51088c4.jpg",
+      "SourceId": "OzelDers.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\",
+      "BasePath": "_content/OzelDers.Web",
+      "RelativePath": "Images/8131b185-8529-4d92-828f-b4d9d51088c4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\8131b185-8529-4d92-828f-b4d9d51088c4.jpg"
     },
     {
       "Identity": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9.png",
