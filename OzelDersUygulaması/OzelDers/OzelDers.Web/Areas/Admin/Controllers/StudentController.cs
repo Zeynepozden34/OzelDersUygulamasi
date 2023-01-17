@@ -44,6 +44,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 };
 
             }
+            ViewBag.SelectedMenu = "Student";
+            ViewBag.Title = "Öğrenciler";
             return View(studentListDtos);
        
         }

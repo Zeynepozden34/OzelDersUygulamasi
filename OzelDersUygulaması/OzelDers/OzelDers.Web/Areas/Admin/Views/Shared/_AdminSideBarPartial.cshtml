@@ -13,22 +13,22 @@
     <a asp-area="Admin"
        asp-controller="Student"
        asp-action="Index"
-       class="list-group-item list-group-item-action">Öğrenciler</a>
+       class="list-group-item list-group-item-action @(ViewBag.SelectedMenu=="Student" ? "active" : "")">Öğrenciler</a>
 
     <a asp-area="Admin"
        asp-controller="Teacher"
        asp-action="Index"
-       class="list-group-item list-group-item-action">Öğretmenler</a>
+       class="list-group-item list-group-item-action @(ViewBag.SelectedMenu=="Teacher" ? "active" : "")">Öğretmenler</a>
 
     <a asp-area="Admin"
-       asp-controller="Category"
+       asp-controller="Role"
        asp-action="Index"
-       class="list-group-item list-group-item-action">Roller</a>
+       class="list-group-item list-group-item-action @(ViewBag.SelectedMenu=="Role" ? "active" : "")">Roller</a>
 
     <a asp-area="Admin"
-       asp-controller="Category"
+       asp-controller="User"
        asp-action="Index"
-       class="list-group-item list-group-item-action">Üyeler</a>
+       class="list-group-item list-group-item-action @(ViewBag.SelectedMenu=="User" ? "active" : "")">Kullanıcılar</a>
 
     <a asp-area="Admin"
        asp-controller="Category"

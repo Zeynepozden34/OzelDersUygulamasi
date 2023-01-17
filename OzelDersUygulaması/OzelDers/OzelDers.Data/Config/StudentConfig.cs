@@ -49,6 +49,7 @@ namespace OzelDers.Data.Config
             builder.Property(s => s.Location)
                 .IsRequired()
                 .HasMaxLength(200);
+
             builder.Property(s => s.Url)
                .IsRequired()
                .HasMaxLength(200);

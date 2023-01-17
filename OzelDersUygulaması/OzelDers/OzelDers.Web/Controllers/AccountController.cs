@@ -54,11 +54,13 @@ namespace OzelDers.Web.Controllers
             }
             return View(loginDto);
         }
+        [HttpGet]
         public IActionResult Register()
         {
             RegisterDto registerDto = new RegisterDto();
             return View(registerDto);
         }
+
         [HttpPost]
 
         public async Task<IActionResult> Register(RegisterDto registerDto)

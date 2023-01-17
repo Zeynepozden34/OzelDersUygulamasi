@@ -93,8 +93,24 @@
       "PackagePath": "staticwebassets\\Images\\5.png"
     },
     {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5a65359a-a186-4d56-b56a-6955db06fcf6.png",
+      "PackagePath": "staticwebassets\\Images\\5a65359a-a186-4d56-b56a-6955db06fcf6.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5db25988-d811-48cf-bddf-96b72cd51248.png",
+      "PackagePath": "staticwebassets\\Images\\5db25988-d811-48cf-bddf-96b72cd51248.png"
+    },
+    {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\6.png",
       "PackagePath": "staticwebassets\\Images\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png",
+      "PackagePath": "staticwebassets\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\68f89f68-1839-4811-829c-c660412e5605.png",
+      "PackagePath": "staticwebassets\\Images\\68f89f68-1839-4811-829c-c660412e5605.png"
     },
     {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\7.png",
@@ -117,8 +133,24 @@
       "PackagePath": "staticwebassets\\Images\\9.png"
     },
     {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\932b35b6-8b0a-4a44-a7c9-5374e33c2e2e.png",
+      "PackagePath": "staticwebassets\\Images\\932b35b6-8b0a-4a44-a7c9-5374e33c2e2e.png"
+    },
+    {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\94b526ac-e61e-4a22-8fd1-d9f10984f281.png",
       "PackagePath": "staticwebassets\\Images\\94b526ac-e61e-4a22-8fd1-d9f10984f281.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9f22eee6-9c4c-4121-8b60-6610aff2e7fa.png",
+      "PackagePath": "staticwebassets\\Images\\9f22eee6-9c4c-4121-8b60-6610aff2e7fa.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\a72d6775-9ffd-4022-b094-bef85e05e982.png",
+      "PackagePath": "staticwebassets\\Images\\a72d6775-9ffd-4022-b094-bef85e05e982.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b4b58fd0-6898-4ba3-90b4-e0bb31595434.png",
+      "PackagePath": "staticwebassets\\Images\\b4b58fd0-6898-4ba3-90b4-e0bb31595434.png"
     },
     {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b62a22f5-8f15-4b65-8d9a-0f79e27ed1bb.png",
@@ -135,6 +167,18 @@
     {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\e01a9495-dba3-4ba6-9c31-35a5a122bb1e.png",
       "PackagePath": "staticwebassets\\Images\\e01a9495-dba3-4ba6-9c31-35a5a122bb1e.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f5dc4280-ae1b-4e9c-ab0a-fa28e9fc32e3.png",
+      "PackagePath": "staticwebassets\\Images\\f5dc4280-ae1b-4e9c-ab0a-fa28e9fc32e3.png"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f8da2985-757d-4ef8-b8ec-14d7cea346fe.jpg",
+      "PackagePath": "staticwebassets\\Images\\f8da2985-757d-4ef8-b8ec-14d7cea346fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fd431d0a-b379-4518-b90e-cb190ba56b46.png",
+      "PackagePath": "staticwebassets\\Images\\fd431d0a-b379-4518-b90e-cb190ba56b46.png"
     },
     {
       "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fec41d03-f720-41cf-aa90-9cfcff880e99.png",
