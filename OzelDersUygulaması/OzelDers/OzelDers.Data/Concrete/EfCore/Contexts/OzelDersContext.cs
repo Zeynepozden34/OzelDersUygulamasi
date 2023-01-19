@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using OzelDers.Data.Config;
+using OzelDers.Data.Extension;
 using OzelDers.Entity.Concrete;
 using OzelDers.Entity.Concrete.Identity;
 using System;
@@ -27,6 +28,7 @@ namespace OzelDers.Data.Concrete.EfCore.Contexts
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.SeedData();
             modelBuilder.ApplyConfiguration(new StudentConfig());
             modelBuilder.ApplyConfiguration(new TeacherConfig());
             modelBuilder.ApplyConfiguration(new BranchConfig());

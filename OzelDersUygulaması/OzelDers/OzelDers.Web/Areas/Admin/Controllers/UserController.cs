@@ -24,6 +24,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             List<UserDto> users = _userManager.Users.Select(u => new UserDto
             {
                 Id = u.Id,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
                 UserName = u.UserName,
                 Email = u.Email              
             }).ToList();

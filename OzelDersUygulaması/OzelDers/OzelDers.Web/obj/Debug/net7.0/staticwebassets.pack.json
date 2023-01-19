@@ -1,451 +1,527 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\OzelDers.Web.bundle.scp.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\OzelDers.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\OzelDers.Web.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\06c43dab-3149-4e01-ae61-7d843c912899.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\009c6e66-d0b5-4a8e-93e4-e2877bc55206.png",
+      "PackagePath": "staticwebassets\\Images\\009c6e66-d0b5-4a8e-93e4-e2877bc55206.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\05ba281a-c541-458c-96bb-ef79e57f67f4.png",
+      "PackagePath": "staticwebassets\\Images\\05ba281a-c541-458c-96bb-ef79e57f67f4.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\06c43dab-3149-4e01-ae61-7d843c912899.png",
       "PackagePath": "staticwebassets\\Images\\06c43dab-3149-4e01-ae61-7d843c912899.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\072e9e1d-c096-4503-811a-b92426ecf84e.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\072e9e1d-c096-4503-811a-b92426ecf84e.jpg",
       "PackagePath": "staticwebassets\\Images\\072e9e1d-c096-4503-811a-b92426ecf84e.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\1.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\1.png",
       "PackagePath": "staticwebassets\\Images\\1.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\10.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\10.png",
       "PackagePath": "staticwebassets\\Images\\10.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\11.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\11.png",
       "PackagePath": "staticwebassets\\Images\\11.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2.png",
       "PackagePath": "staticwebassets\\Images\\2.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\20.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\20.png",
       "PackagePath": "staticwebassets\\Images\\20.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\21.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\20f9abff-58fa-4401-b765-e2605ca369dd.png",
+      "PackagePath": "staticwebassets\\Images\\20f9abff-58fa-4401-b765-e2605ca369dd.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\21.png",
       "PackagePath": "staticwebassets\\Images\\21.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\22.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\22.png",
       "PackagePath": "staticwebassets\\Images\\22.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\23.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\23.png",
       "PackagePath": "staticwebassets\\Images\\23.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\24.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\24.png",
       "PackagePath": "staticwebassets\\Images\\24.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\25.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\25.png",
       "PackagePath": "staticwebassets\\Images\\25.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\26.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\26.png",
       "PackagePath": "staticwebassets\\Images\\26.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\27 (2).png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\27 (2).png",
       "PackagePath": "staticwebassets\\Images\\27 (2).png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\27.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\27.png",
       "PackagePath": "staticwebassets\\Images\\27.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\28.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\28.png",
       "PackagePath": "staticwebassets\\Images\\28.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\29.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\29.png",
       "PackagePath": "staticwebassets\\Images\\29.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg",
       "PackagePath": "staticwebassets\\Images\\2b35d31f-7938-482b-9726-b1cb261e8b3d.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2bbf4afb-2a2b-45c0-80ab-cb1aa848ff0f.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\2bbf4afb-2a2b-45c0-80ab-cb1aa848ff0f.png",
       "PackagePath": "staticwebassets\\Images\\2bbf4afb-2a2b-45c0-80ab-cb1aa848ff0f.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\3.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\3.png",
       "PackagePath": "staticwebassets\\Images\\3.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\34e53166-d073-47f3-9bc4-a65f79114d81.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\3397ba7e-8b03-4406-b3a2-670788b4a9e6.png",
+      "PackagePath": "staticwebassets\\Images\\3397ba7e-8b03-4406-b3a2-670788b4a9e6.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\34e53166-d073-47f3-9bc4-a65f79114d81.png",
       "PackagePath": "staticwebassets\\Images\\34e53166-d073-47f3-9bc4-a65f79114d81.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg",
       "PackagePath": "staticwebassets\\Images\\352a3c64-0e76-4fa0-bf6d-fe66638b2bde.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\4.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\4.png",
       "PackagePath": "staticwebassets\\Images\\4.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\4c1819ac-9fb7-4f50-ab10-dbd4804bcd55.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\45f796a0-50d4-4bd1-9ee5-3dbafb2c27c4.png",
+      "PackagePath": "staticwebassets\\Images\\45f796a0-50d4-4bd1-9ee5-3dbafb2c27c4.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\4c1819ac-9fb7-4f50-ab10-dbd4804bcd55.png",
       "PackagePath": "staticwebassets\\Images\\4c1819ac-9fb7-4f50-ab10-dbd4804bcd55.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5.png",
       "PackagePath": "staticwebassets\\Images\\5.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5a65359a-a186-4d56-b56a-6955db06fcf6.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5a221841-2414-43c5-a49f-04f8e90c7387.png",
+      "PackagePath": "staticwebassets\\Images\\5a221841-2414-43c5-a49f-04f8e90c7387.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5a65359a-a186-4d56-b56a-6955db06fcf6.png",
       "PackagePath": "staticwebassets\\Images\\5a65359a-a186-4d56-b56a-6955db06fcf6.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5db25988-d811-48cf-bddf-96b72cd51248.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5be11eee-816e-4364-a4dc-874159855f19.png",
+      "PackagePath": "staticwebassets\\Images\\5be11eee-816e-4364-a4dc-874159855f19.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5c44241e-ea0a-49ae-87d8-8308a9281672.png",
+      "PackagePath": "staticwebassets\\Images\\5c44241e-ea0a-49ae-87d8-8308a9281672.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\5db25988-d811-48cf-bddf-96b72cd51248.png",
       "PackagePath": "staticwebassets\\Images\\5db25988-d811-48cf-bddf-96b72cd51248.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\6.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\6.png",
       "PackagePath": "staticwebassets\\Images\\6.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63c8303d-18b5-4d5b-8486-231494dcdc15.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63c8303d-18b5-4d5b-8486-231494dcdc15.jpg",
       "PackagePath": "staticwebassets\\Images\\63c8303d-18b5-4d5b-8486-231494dcdc15.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png",
       "PackagePath": "staticwebassets\\Images\\63e68ab8-aba0-4923-8ea1-b8ece4e9a392.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\68f89f68-1839-4811-829c-c660412e5605.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\68f89f68-1839-4811-829c-c660412e5605.png",
       "PackagePath": "staticwebassets\\Images\\68f89f68-1839-4811-829c-c660412e5605.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\7.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\7.png",
       "PackagePath": "staticwebassets\\Images\\7.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\72b50930-f298-4b63-8584-730c4a11289c.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\72b50930-f298-4b63-8584-730c4a11289c.png",
       "PackagePath": "staticwebassets\\Images\\72b50930-f298-4b63-8584-730c4a11289c.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\757bae6a-011c-4c58-ba6c-051af4a90657.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\757bae6a-011c-4c58-ba6c-051af4a90657.png",
       "PackagePath": "staticwebassets\\Images\\757bae6a-011c-4c58-ba6c-051af4a90657.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\79477eba-b262-4a42-9cb9-e7fa64769653.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\79477eba-b262-4a42-9cb9-e7fa64769653.jpg",
       "PackagePath": "staticwebassets\\Images\\79477eba-b262-4a42-9cb9-e7fa64769653.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\7ac08b01-fb86-4e78-99af-de20012598a2.png",
+      "PackagePath": "staticwebassets\\Images\\7ac08b01-fb86-4e78-99af-de20012598a2.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\7c3827d1-5f72-48b9-b8be-d5caa6cfcea8.png",
+      "PackagePath": "staticwebassets\\Images\\7c3827d1-5f72-48b9-b8be-d5caa6cfcea8.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8.png",
       "PackagePath": "staticwebassets\\Images\\8.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8131b185-8529-4d92-828f-b4d9d51088c4.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8131b185-8529-4d92-828f-b4d9d51088c4.jpg",
       "PackagePath": "staticwebassets\\Images\\8131b185-8529-4d92-828f-b4d9d51088c4.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\81b5fa54-0de1-4786-b86c-11ab42557c7e.png",
+      "PackagePath": "staticwebassets\\Images\\81b5fa54-0de1-4786-b86c-11ab42557c7e.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\8b51542c-55d6-417e-823d-81f9e9e7ce4b.png",
+      "PackagePath": "staticwebassets\\Images\\8b51542c-55d6-417e-823d-81f9e9e7ce4b.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9.png",
       "PackagePath": "staticwebassets\\Images\\9.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\932b35b6-8b0a-4a44-a7c9-5374e33c2e2e.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\932b35b6-8b0a-4a44-a7c9-5374e33c2e2e.png",
       "PackagePath": "staticwebassets\\Images\\932b35b6-8b0a-4a44-a7c9-5374e33c2e2e.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\94b526ac-e61e-4a22-8fd1-d9f10984f281.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\94b526ac-e61e-4a22-8fd1-d9f10984f281.png",
       "PackagePath": "staticwebassets\\Images\\94b526ac-e61e-4a22-8fd1-d9f10984f281.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9f22eee6-9c4c-4121-8b60-6610aff2e7fa.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\97aba021-35ac-471b-a2d6-13927525966b.png",
+      "PackagePath": "staticwebassets\\Images\\97aba021-35ac-471b-a2d6-13927525966b.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\9f22eee6-9c4c-4121-8b60-6610aff2e7fa.png",
       "PackagePath": "staticwebassets\\Images\\9f22eee6-9c4c-4121-8b60-6610aff2e7fa.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\a72d6775-9ffd-4022-b094-bef85e05e982.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\a72d6775-9ffd-4022-b094-bef85e05e982.png",
       "PackagePath": "staticwebassets\\Images\\a72d6775-9ffd-4022-b094-bef85e05e982.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b4b58fd0-6898-4ba3-90b4-e0bb31595434.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\a8a44e33-6ca8-455f-8450-dcddbfd54c6e.png",
+      "PackagePath": "staticwebassets\\Images\\a8a44e33-6ca8-455f-8450-dcddbfd54c6e.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\aecc2147-1235-4cce-a37b-8ce97648c621.png",
+      "PackagePath": "staticwebassets\\Images\\aecc2147-1235-4cce-a37b-8ce97648c621.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b2253d79-dd8e-4a2d-8819-da2fef674a74.png",
+      "PackagePath": "staticwebassets\\Images\\b2253d79-dd8e-4a2d-8819-da2fef674a74.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b4b58fd0-6898-4ba3-90b4-e0bb31595434.png",
       "PackagePath": "staticwebassets\\Images\\b4b58fd0-6898-4ba3-90b4-e0bb31595434.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b62a22f5-8f15-4b65-8d9a-0f79e27ed1bb.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b62a22f5-8f15-4b65-8d9a-0f79e27ed1bb.png",
       "PackagePath": "staticwebassets\\Images\\b62a22f5-8f15-4b65-8d9a-0f79e27ed1bb.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b6f9cfd5-5b14-40cc-8b13-1123bb8d6600.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\b6f9cfd5-5b14-40cc-8b13-1123bb8d6600.png",
       "PackagePath": "staticwebassets\\Images\\b6f9cfd5-5b14-40cc-8b13-1123bb8d6600.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\bda42809-8048-43ae-a32f-bf6e0b60a8f6.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\bda42809-8048-43ae-a32f-bf6e0b60a8f6.png",
       "PackagePath": "staticwebassets\\Images\\bda42809-8048-43ae-a32f-bf6e0b60a8f6.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\e01a9495-dba3-4ba6-9c31-35a5a122bb1e.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\d93d1ce3-280f-4a0c-88fb-75e889235348.png",
+      "PackagePath": "staticwebassets\\Images\\d93d1ce3-280f-4a0c-88fb-75e889235348.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\e01a9495-dba3-4ba6-9c31-35a5a122bb1e.png",
       "PackagePath": "staticwebassets\\Images\\e01a9495-dba3-4ba6-9c31-35a5a122bb1e.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f5dc4280-ae1b-4e9c-ab0a-fa28e9fc32e3.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\e8d05512-7607-4e63-b0b0-86a05dc3d88a.png",
+      "PackagePath": "staticwebassets\\Images\\e8d05512-7607-4e63-b0b0-86a05dc3d88a.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f5dc4280-ae1b-4e9c-ab0a-fa28e9fc32e3.png",
       "PackagePath": "staticwebassets\\Images\\f5dc4280-ae1b-4e9c-ab0a-fa28e9fc32e3.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f8da2985-757d-4ef8-b8ec-14d7cea346fe.jpg",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f8da2985-757d-4ef8-b8ec-14d7cea346fe.jpg",
       "PackagePath": "staticwebassets\\Images\\f8da2985-757d-4ef8-b8ec-14d7cea346fe.jpg"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fd431d0a-b379-4518-b90e-cb190ba56b46.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\f93f34a0-4225-4b2a-b6f4-07199fcf216c.png",
+      "PackagePath": "staticwebassets\\Images\\f93f34a0-4225-4b2a-b6f4-07199fcf216c.png"
+    },
+    {
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fd431d0a-b379-4518-b90e-cb190ba56b46.png",
       "PackagePath": "staticwebassets\\Images\\fd431d0a-b379-4518-b90e-cb190ba56b46.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fec41d03-f720-41cf-aa90-9cfcff880e99.png",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\Images\\fec41d03-f720-41cf-aa90-9cfcff880e99.png",
       "PackagePath": "staticwebassets\\Images\\fec41d03-f720-41cf-aa90-9cfcff880e99.png"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Casper\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\SABAH\\Documents\\GitHub\\OzelDersUygulamasi\\OzelDersUygulaması\\OzelDers\\OzelDers.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

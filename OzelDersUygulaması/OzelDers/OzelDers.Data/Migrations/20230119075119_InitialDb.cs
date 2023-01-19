@@ -18,6 +18,7 @@ namespace OzelDers.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "TEXT", nullable: true)
@@ -32,6 +33,10 @@ namespace OzelDers.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
+                    FirstName = table.Column<string>(type: "TEXT", nullable: true),
+                    LastName = table.Column<string>(type: "TEXT", nullable: true),
+                    Gender = table.Column<string>(type: "TEXT", nullable: true),
+                    Location = table.Column<string>(type: "TEXT", nullable: true),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
@@ -285,6 +290,28 @@ namespace OzelDers.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "065c66cd-1c14-4c6a-87aa-d03e768027ac", null, null, "Student", "STUDENT" },
+                    { "3383e82d-1809-4990-a29a-2caef97e7d56", null, null, "Admin", "ADMIN" },
+                    { "709ba7a3-877f-42ac-b926-be0fe9338dfd", null, null, "Teacher", "TEACHER" },
+                    { "77b145e6-90f8-4254-b420-7598b079d5d0", null, null, "User", "USER" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "Gender", "LastName", "Location", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[,]
+                {
+                    { "33a2a1c3-ba58-4881-92c1-9185c4e901e7", 0, "a7eb45c8-f2f0-4f72-9d64-92ae81945fcd", "teacher@gmail.com", true, "Defne", "Kadın", "Teacher", "Ankara", false, null, "TEACHER@GMAIL.COM", "TEACHER", "AQAAAAIAAYagAAAAEO+5mNCmnozjgt/GxgVPgLL8ef6tOHjXkZndFLgMCAsoUD4fvjRk/pviZznifaRg6w==", "4444444455", false, "33068a8f-2861-478d-b028-a5c09c7e8da1", false, "teacher" },
+                    { "5b75301c-6dd3-47b8-92dd-8290e877ac8a", 0, "054095c7-4dc4-4c04-8da7-92850a93542e", "student@gmail.com", true, "Yusuf", "Erkek", "Student", "Ankara", false, null, "STUDENT@GMAIL.COM", "STUDENT", "AQAAAAIAAYagAAAAEIxEY7wFOQVYQeAAvA97pVuhbnDeRK4mVtYsGZn143RlGtOrngTfIcKsPRy3QUeKsg==", "5554444444", false, "cfdfb290-5695-4351-94bf-e21cc5f55c5e", false, "student" },
+                    { "eb46bb5a-e294-4b38-8dca-a203c7c2686d", 0, "01bc1cbe-9181-4869-8ea4-4f09f47af947", "admin@gmail.com", true, "Deniz", "Kadın", "Admin", "İstanbul", false, null, "ADMIN@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEFZXM/ti16pTw7IPMrjfrR9GsLwBbJtRxByHnSRzBQMeOH/pYT/LVFzuueII3HcmGg==", "5555555555", false, "c1b108e6-a717-4544-9acb-a3c1fd9e6d81", false, "admin" },
+                    { "f56c5be6-af7c-4638-a9f0-8bc8daf276be", 0, "b675579d-495d-4d22-87ec-f0ae70bba3c5", "user@gmail.com", true, "Kemal", "Erkek", "User", "Ankara", false, null, "USER@GMAIL.COM", "USER", "AQAAAAIAAYagAAAAEHvQSw6phnVfVFPrcd7y/Y1EPh2s8viTxe8qxa3yKRYpomkg+ENXc34o1d/ZoyHoag==", "4444444444", false, "314bfede-04b3-4352-ac81-2856c4085f7c", false, "user" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Branchs",
                 columns: new[] { "Id", "Name", "Url" },
                 values: new object[,]
@@ -331,6 +358,17 @@ namespace OzelDers.Data.Migrations
                     { 5, 40, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C# dersi verilir.", "kemaleren@ozelders.com", "Kemal", "erkek", 400, "24.png", false, true, "Eren", "Bornova/İzmir", "0535 755 8282", "Fırat Üniversitesi", "kemaleren", null },
                     { 6, 25, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Edebiyat dersi verilir.", "melissusan@ozelders.com", "Melis", "kadın", 600, "25.png", false, true, "Susan", "Sefaköy/İstanbul", "0548 755 8282", "İstanbul Üniversitesi", "melissusan", null },
                     { 7, 34, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Almanca dersi verilir.", "defnebilen@ozelders.com", "Defne", "kadın", 500, "26.png", false, false, "Bilen", "Buca/İzmir", "0543 755 7235", "Dokuz Eylül Üniversitesi", "defnebilen", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[,]
+                {
+                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "33a2a1c3-ba58-4881-92c1-9185c4e901e7" },
+                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "5b75301c-6dd3-47b8-92dd-8290e877ac8a" },
+                    { "3383e82d-1809-4990-a29a-2caef97e7d56", "eb46bb5a-e294-4b38-8dca-a203c7c2686d" },
+                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "f56c5be6-af7c-4638-a9f0-8bc8daf276be" }
                 });
 
             migrationBuilder.InsertData(

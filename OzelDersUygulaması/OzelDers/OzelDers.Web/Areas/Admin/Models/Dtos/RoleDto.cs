@@ -10,6 +10,8 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [DisplayName("Rol Adı")]
         [Required(ErrorMessage = "{0} alanı boş bırakılamaz")]
         public string Name { get; set; }
+        [DisplayName("Açıklama")]
+        public string Description { get; set; }
 
     }
 }

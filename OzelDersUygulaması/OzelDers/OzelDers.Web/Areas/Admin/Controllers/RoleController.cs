@@ -24,7 +24,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             List<RoleDto> roles = _roleManager.Roles.Select(r => new RoleDto
             {
                 Id = r.Id,
-                Name = r.Name
+                Name = r.Name,
+                Description = r.Description
             }).ToList();
             ViewBag.SelectedMenu = "Role";
             ViewBag.Title = "Roller";

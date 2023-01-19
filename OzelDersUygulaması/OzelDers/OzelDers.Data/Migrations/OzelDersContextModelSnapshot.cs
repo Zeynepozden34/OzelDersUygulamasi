@@ -98,6 +98,28 @@ namespace OzelDers.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "eb46bb5a-e294-4b38-8dca-a203c7c2686d",
+                            RoleId = "3383e82d-1809-4990-a29a-2caef97e7d56"
+                        },
+                        new
+                        {
+                            UserId = "f56c5be6-af7c-4638-a9f0-8bc8daf276be",
+                            RoleId = "77b145e6-90f8-4254-b420-7598b079d5d0"
+                        },
+                        new
+                        {
+                            UserId = "33a2a1c3-ba58-4881-92c1-9185c4e901e7",
+                            RoleId = "77b145e6-90f8-4254-b420-7598b079d5d0"
+                        },
+                        new
+                        {
+                            UserId = "5b75301c-6dd3-47b8-92dd-8290e877ac8a",
+                            RoleId = "77b145e6-90f8-4254-b420-7598b079d5d0"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -210,6 +232,9 @@ namespace OzelDers.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
@@ -225,6 +250,32 @@ namespace OzelDers.Data.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "3383e82d-1809-4990-a29a-2caef97e7d56",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "77b145e6-90f8-4254-b420-7598b079d5d0",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "709ba7a3-877f-42ac-b926-be0fe9338dfd",
+                            Name = "Teacher",
+                            NormalizedName = "TEACHER"
+                        },
+                        new
+                        {
+                            Id = "065c66cd-1c14-4c6a-87aa-d03e768027ac",
+                            Name = "Student",
+                            NormalizedName = "STUDENT"
+                        });
                 });
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Identity.User", b =>
@@ -245,6 +296,18 @@ namespace OzelDers.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("INTEGER");
@@ -289,6 +352,92 @@ namespace OzelDers.Data.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "eb46bb5a-e294-4b38-8dca-a203c7c2686d",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "01bc1cbe-9181-4869-8ea4-4f09f47af947",
+                            Email = "admin@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Deniz",
+                            Gender = "Kadın",
+                            LastName = "Admin",
+                            Location = "İstanbul",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@GMAIL.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFZXM/ti16pTw7IPMrjfrR9GsLwBbJtRxByHnSRzBQMeOH/pYT/LVFzuueII3HcmGg==",
+                            PhoneNumber = "5555555555",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "c1b108e6-a717-4544-9acb-a3c1fd9e6d81",
+                            TwoFactorEnabled = false,
+                            UserName = "admin"
+                        },
+                        new
+                        {
+                            Id = "f56c5be6-af7c-4638-a9f0-8bc8daf276be",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "b675579d-495d-4d22-87ec-f0ae70bba3c5",
+                            Email = "user@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Kemal",
+                            Gender = "Erkek",
+                            LastName = "User",
+                            Location = "Ankara",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "USER@GMAIL.COM",
+                            NormalizedUserName = "USER",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHvQSw6phnVfVFPrcd7y/Y1EPh2s8viTxe8qxa3yKRYpomkg+ENXc34o1d/ZoyHoag==",
+                            PhoneNumber = "4444444444",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "314bfede-04b3-4352-ac81-2856c4085f7c",
+                            TwoFactorEnabled = false,
+                            UserName = "user"
+                        },
+                        new
+                        {
+                            Id = "33a2a1c3-ba58-4881-92c1-9185c4e901e7",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "a7eb45c8-f2f0-4f72-9d64-92ae81945fcd",
+                            Email = "teacher@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Defne",
+                            Gender = "Kadın",
+                            LastName = "Teacher",
+                            Location = "Ankara",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "TEACHER@GMAIL.COM",
+                            NormalizedUserName = "TEACHER",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO+5mNCmnozjgt/GxgVPgLL8ef6tOHjXkZndFLgMCAsoUD4fvjRk/pviZznifaRg6w==",
+                            PhoneNumber = "4444444455",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "33068a8f-2861-478d-b028-a5c09c7e8da1",
+                            TwoFactorEnabled = false,
+                            UserName = "teacher"
+                        },
+                        new
+                        {
+                            Id = "5b75301c-6dd3-47b8-92dd-8290e877ac8a",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "054095c7-4dc4-4c04-8da7-92850a93542e",
+                            Email = "student@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Yusuf",
+                            Gender = "Erkek",
+                            LastName = "Student",
+                            Location = "Ankara",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "STUDENT@GMAIL.COM",
+                            NormalizedUserName = "STUDENT",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIxEY7wFOQVYQeAAvA97pVuhbnDeRK4mVtYsGZn143RlGtOrngTfIcKsPRy3QUeKsg==",
+                            PhoneNumber = "5554444444",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "cfdfb290-5695-4351-94bf-e21cc5f55c5e",
+                            TwoFactorEnabled = false,
+                            UserName = "student"
+                        });
                 });
 
             modelBuilder.Entity("OzelDers.Entity.Concrete.Student", b =>

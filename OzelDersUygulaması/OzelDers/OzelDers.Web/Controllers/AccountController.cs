@@ -4,6 +4,7 @@ using OzelDers.Business.Abstract;
 using OzelDers.Core;
 using OzelDers.Entity.Concrete;
 using OzelDers.Entity.Concrete.Identity;
+using OzelDers.Web.Areas.Admin.Models.Dtos;
 using OzelDers.Web.Models;
 
 namespace OzelDers.Web.Controllers
@@ -69,7 +70,8 @@ namespace OzelDers.Web.Controllers
             {
                 var user = new User
                 {
-                    
+                    FirstName = registerDto.FirstName,
+                    LastName = registerDto.LastName,
                     UserName = registerDto.UserName,
                     Email = registerDto.Email,
                     EmailConfirmed = true
@@ -77,54 +79,68 @@ namespace OzelDers.Web.Controllers
 
                 if (registerDto.SelectedUser != null)
                 {
+                    var result = await _userManager.CreateAsync(user, registerDto.Password);
+                    if (result.Succeeded)
+                    {
+                        await _userManager.AddToRoleAsync(user, "User");
+                        TempData["Message"] = Jobs.CreateMessage("Bilgi", "Hesabınız başarıyla oluşturulmuştur. Giriş yapabilirsiniz.", "success");
+
+                    }
                     if (registerDto.SelectedUser == "ogretmen")
                     {
-                        Teacher teacher=new Teacher()
-                        {
-                            FirstName = registerDto.FirstName,
-                            LastName = registerDto.LastName,
-                            Email = registerDto.Email,
-                            UserId = user.Id,
-                            Description = registerDto.Description,
-                            Phone = registerDto.Phone,
-                            Gender = registerDto.Gender,
-                            Url = user.UserName,
-                            ImageUrl = Jobs.UploadImage(registerDto.ImageFile),
-                            Location = registerDto.Location
-                        };
+                      
+                            Teacher teacher = new Teacher()
+                            {
+                                FirstName = registerDto.FirstName,
+                                LastName = registerDto.LastName,
+                                Email = registerDto.Email,
+                                UserId = user.Id,
+                                Description = registerDto.Description,
+                                Phone = registerDto.Phone,
+                                Gender = registerDto.Gender,
+                                Url = user.UserName,
+                                ImageUrl = Jobs.UploadImage(registerDto.ImageFile),
+                                Location = registerDto.Location
+                            };
+                            await _teacherManager.CreateAsync(teacher);
                         
-                        await _teacherManager.CreateAsync(teacher);
-                    
+                                             
+                        await _userManager.AddToRoleAsync(user, "Teacher");
+
                     } else if (registerDto.SelectedUser == "ogrenci")
                     {
-                        Student student = new Student() { 
-                        FirstName = registerDto.FirstName,
-                        LastName = registerDto.LastName,
-                        Email = registerDto.Email,
-                        UserId = user.Id,
-                       
-                        Description =registerDto.Description,
-                        Phone = registerDto.Phone,
-                        Gender =registerDto.Gender,
-                        Url = user.UserName,
-                        Location = registerDto.Location,
-                       ImageUrl = Jobs.UploadImage(registerDto.ImageFile)                          
-                        };
+
+                            Student student = new Student()
+                            {
+                                FirstName = registerDto.FirstName,
+                                LastName = registerDto.LastName,
+                                Email = registerDto.Email,
+                                UserId = user.Id,
+
+                                Description = registerDto.Description,
+                                Phone = registerDto.Phone,
+                                Gender = registerDto.Gender,
+                                Url = user.UserName,
+                                Location = registerDto.Location,
+                                ImageUrl = Jobs.UploadImage(registerDto.ImageFile)
+                            };
+                            await _studentManager.CreateAsync(student);
                         
-                        await _studentManager.CreateAsync(student);
+                        
+                        
+                        await _userManager.AddToRoleAsync(user, "Student");
                     }
                 }
-                var result = await _userManager.CreateAsync(user, registerDto.Password);
-                if (result.Succeeded)
-                {
-                 
-                    await _userManager.AddToRoleAsync(user, "User");                  
-                    TempData["Message"] = Jobs.CreateMessage("Bilgi", "Hesabınız başarıyla oluşturulmuştur. Giriş yapabilirsiniz.", "success");
-                    return RedirectToAction("Login", "Account");
-                }
+
             }
             ModelState.AddModelError("", "Bilinmeyen bir hata oluştu, lütfen tekrar deneyiniz");
-            return View(registerDto);
+            return RedirectToAction("Login", "Account");
         }
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
