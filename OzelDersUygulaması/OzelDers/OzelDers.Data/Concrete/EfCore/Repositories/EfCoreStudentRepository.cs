@@ -39,5 +39,18 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
               .FirstOrDefaultAsync();
 
         }
+
+        public async Task CreateStudentAsync(Student student, int[]? teacher)
+        {
+            await OzelDersContext.Students.AddAsync(student);
+            await OzelDersContext.SaveChangesAsync();
+            student.StudentAndTeachers = teacher
+                .Select(tecId => new StudentAndTeacher
+                {
+                    StudentId=student.Id,
+                    TeacherId=tecId
+                }).ToList();
+            await OzelDersContext.SaveChangesAsync();
+        }
     }
 }

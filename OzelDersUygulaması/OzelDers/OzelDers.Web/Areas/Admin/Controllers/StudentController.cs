@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OzelDers.Business.Abstract;
 using OzelDers.Business.Concrete;
+using OzelDers.Core;
 using OzelDers.Entity.Concrete;
 using OzelDers.Web.Areas.Admin.Models.Dtos;
+using OzelDers.Web.Models;
 
 namespace OzelDers.Web.Areas.Admin.Controllers
 {
@@ -10,10 +12,12 @@ namespace OzelDers.Web.Areas.Admin.Controllers
     public class StudentController : Controller
     {
         private readonly IStudentService _studentManager;
+        private readonly ITeacherService _teacherManager;
 
-        public StudentController(IStudentService studentManager)
+        public StudentController(IStudentService studentManager, ITeacherService teacherManager)
         {
             _studentManager = studentManager;
+            _teacherManager = teacherManager;
         }
 
         public async Task<IActionResult> Index()
@@ -49,5 +53,39 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             return View(studentListDtos);
        
         }
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            StudentAddDto studentAddDto = new StudentAddDto();
+            return View(studentAddDto);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(StudentAddDto studentAddDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var url = Jobs.InitUrL(studentAddDto.FirstName);
+                var student = new Student
+                {
+                  
+                   FirstName=studentAddDto.FirstName,
+                   LastName=studentAddDto.LastName,
+                   Email=studentAddDto.Email,
+                   Age=studentAddDto.Age,
+                   Gender=studentAddDto.Gender,
+                   Phone=studentAddDto.Phone,
+                   Description=studentAddDto.Description,
+                   Location=studentAddDto.Location,
+                   Url=url,
+                   ImageUrl = Jobs.UploadImage(studentAddDto.ImageFile)
+
+                };
+                await _studentManager.CreateAsync(student);
+                return RedirectToAction("Index");
+            }
+            studentAddDto.ImageUrl = studentAddDto.ImageUrl;
+            return View(studentAddDto);
+        }
+
     }
 }

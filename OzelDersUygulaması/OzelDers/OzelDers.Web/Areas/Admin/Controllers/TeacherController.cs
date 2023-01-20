@@ -84,7 +84,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 ImageUrl = teacher.ImageUrl,
                 Location = teacher.Location,
                 Url = Jobs.InitUrL(teacher.FirstName),
-            Branch = teacher
+                Branch = teacher
                     .TeacherAndBranches
                     .Select(tab => tab.Branch)
                     .ToList(),
@@ -94,6 +94,40 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     .ToList()
             };
             return View(teacherDetailsDtos);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            StudentAddDto studentAddDto = new StudentAddDto();
+            return View(studentAddDto);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(StudentAddDto studentAddDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var url = Jobs.InitUrL(studentAddDto.FirstName);
+                var student = new Student
+                {
+
+                    FirstName = studentAddDto.FirstName,
+                    LastName = studentAddDto.LastName,
+                    Email = studentAddDto.Email,
+                    Age = studentAddDto.Age,
+                    Gender = studentAddDto.Gender,
+                    Phone = studentAddDto.Phone,
+                    Description = studentAddDto.Description,
+                    Location = studentAddDto.Location,
+                    Url = url,
+                    ImageUrl = Jobs.UploadImage(studentAddDto.ImageFile)
+
+                };
+                await _studentManager.CreateAsync(student);
+                return RedirectToAction("Index");
+            }
+            studentAddDto.ImageUrl = studentAddDto.ImageUrl;
+            return View(studentAddDto);
         }
     }
 }

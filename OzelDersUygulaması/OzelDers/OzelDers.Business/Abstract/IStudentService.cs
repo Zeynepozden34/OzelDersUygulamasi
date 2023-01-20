@@ -15,6 +15,7 @@ namespace OzelDers.Business.Abstract
         void Update(Student student);
         void Delete(Student student);
         Task<List<Student>> GetStudentWithTeacher();
-        Task<Student> GetStudentDetailsByUrlAsync(string url); 
+        Task<Student> GetStudentDetailsByUrlAsync(string url);
+        Task CreateStudentAsync(Student student, int[]? teacher);
     }
 }

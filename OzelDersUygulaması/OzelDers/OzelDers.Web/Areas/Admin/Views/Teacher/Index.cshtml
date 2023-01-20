@@ -1,7 +1,11 @@
 ﻿@model List<TeacherListDto>
 
 <hr />
-
+<a class="btn btn-outline-primary"
+   asp-area="Admin"
+   asp-controller="Teacher"
+   asp-action="Create">Yeni Öğretmen Ekle</a>
+   <hr />
 <div class="d-inline">
     <div class="row">
         @foreach (var teacher in Model)

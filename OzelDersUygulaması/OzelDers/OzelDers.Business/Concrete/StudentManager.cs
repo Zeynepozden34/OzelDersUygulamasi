@@ -24,6 +24,11 @@ namespace OzelDers.Business.Concrete
             await _unitOfWork.SaveAsync();
         }
 
+        public async  Task CreateStudentAsync(Student student, int[]? teacher)
+        {
+            await _unitOfWork.Students.CreateStudentAsync(student, teacher);
+        }
+
         public void Delete(Student student)
         {
              _unitOfWork.Students.Delete(student);
