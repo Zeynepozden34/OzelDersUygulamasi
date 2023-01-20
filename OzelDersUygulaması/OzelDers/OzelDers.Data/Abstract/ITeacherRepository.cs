@@ -14,5 +14,6 @@ namespace OzelDers.Data.Abstract
         Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl);
         Task<List<Teacher>> GetTeacherWithAll();
         Task<Teacher> GetTeacherDetailsByUrlAsync(string url);
+        Task CreateTeacherAsync(Teacher teacher, int[]? SelectedBranchId);
     }
 }

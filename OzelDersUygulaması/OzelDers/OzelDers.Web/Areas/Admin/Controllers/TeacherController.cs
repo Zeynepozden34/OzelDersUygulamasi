@@ -12,11 +12,13 @@ namespace OzelDers.Web.Areas.Admin.Controllers
 
         private readonly ITeacherService _teacherManager;
         private readonly IStudentService _studentManager;
+        private readonly IBranchService _branchManager;
 
-        public TeacherController(ITeacherService teacherManager, IStudentService studentManager)
+        public TeacherController(ITeacherService teacherManager, IStudentService studentManager, IBranchService branchManager)
         {
             _teacherManager = teacherManager;
             _studentManager = studentManager;
+            _branchManager = branchManager;
         }
 
         public async Task<IActionResult> Index()
@@ -99,35 +101,44 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            StudentAddDto studentAddDto = new StudentAddDto();
-            return View(studentAddDto);
+            var branchs = await _branchManager.GetAllAsync();
+            var teacherAddDto = new TeacherAddDto
+            {
+                Branchs = branchs
+            };
+            return View(teacherAddDto);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(StudentAddDto studentAddDto)
+        public async Task<IActionResult> Create(TeacherAddDto teacherAddDto)
         {
             if (ModelState.IsValid)
             {
-                var url = Jobs.InitUrL(studentAddDto.FirstName);
-                var student = new Student
+                var url = Jobs.InitUrL(teacherAddDto.FirstName);
+                var teacher = new Teacher
                 {
 
-                    FirstName = studentAddDto.FirstName,
-                    LastName = studentAddDto.LastName,
-                    Email = studentAddDto.Email,
-                    Age = studentAddDto.Age,
-                    Gender = studentAddDto.Gender,
-                    Phone = studentAddDto.Phone,
-                    Description = studentAddDto.Description,
-                    Location = studentAddDto.Location,
+                    FirstName = teacherAddDto.FirstName,
+                    LastName = teacherAddDto.LastName,
+                    UniverstyGraduatedFrom = teacherAddDto.UniverstyGraduatedFrom,
+                    HourlyPrice = teacherAddDto.HourlyPrice,
+                    Email = teacherAddDto.Email,
+                    Age = teacherAddDto.Age,
+                    Gender = teacherAddDto.Gender,
+                    Phone = teacherAddDto.Phone,
+                    Description = teacherAddDto.Description,
+                    Location = teacherAddDto.Location,
                     Url = url,
-                    ImageUrl = Jobs.UploadImage(studentAddDto.ImageFile)
+                    ImageUrl = Jobs.UploadImage(teacherAddDto.ImageFile),
+                    
 
                 };
-                await _studentManager.CreateAsync(student);
-                return RedirectToAction("Index");
+                await _teacherManager.CreateTeacherAsync(teacher, teacherAddDto.SelectedBranchId);
+                return RedirectToAction("Index","teacher");
             }
-            studentAddDto.ImageUrl = studentAddDto.ImageUrl;
-            return View(studentAddDto);
+            var branchs = await _branchManager.GetAllAsync();
+            teacherAddDto.Branchs = branchs;
+            teacherAddDto.ImageUrl = teacherAddDto.ImageUrl;
+            return View(teacherAddDto);
         }
     }
 }

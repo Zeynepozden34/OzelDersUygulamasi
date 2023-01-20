@@ -24,6 +24,11 @@ namespace OzelDers.Business.Concrete
             await _unitOfWork.SaveAsync();
         }
 
+        public async Task CreateTeacherAsync(Teacher teacher, int[] SelectedBranchId)
+        {
+            await _unitOfWork.Teachers.CreateTeacherAsync(teacher, SelectedBranchId);
+        }
+
         public void Delete(Teacher teacher)
         {
             _unitOfWork.Teachers.Delete(teacher);

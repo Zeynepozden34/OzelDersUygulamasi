@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using OzelDers.Entity.Concrete;
 
 namespace OzelDers.Web.Areas.Admin.Models.Dtos
 {
@@ -18,6 +19,15 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [DisplayName("Mezun Olduğu Üniversite")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
         public string UniverstyGraduatedFrom { get; set; }
+
+        [Required(ErrorMessage = "En az bir Ders seçilmelidir.")]
+        public int[] SelectedBranchId { get; set; }
+
+        [DisplayName("Dersler")]
+        public List<Branch> Branchs { get; set; }
+
+        [DisplayName("Saatlik Ücret")]
+        public int HourlyPrice { get; set; }
 
         [DisplayName("Email")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]

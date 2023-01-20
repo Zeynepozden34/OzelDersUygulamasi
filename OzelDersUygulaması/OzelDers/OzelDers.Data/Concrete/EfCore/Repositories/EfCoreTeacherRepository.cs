@@ -19,6 +19,20 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
         {
             get { return _context as OzelDersContext; }
         }
+
+        public async Task CreateTeacherAsync(Teacher teacher, int[] SelectedBranchId)
+        {
+            await OzelDersContext.Teachers.AddAsync(teacher);
+            await OzelDersContext.SaveChangesAsync();
+            teacher.TeacherAndBranches = SelectedBranchId
+                .Select(brId => new TeacherAndBranch
+                {
+                    TeacherId = teacher.Id,
+                    BranchId = brId
+                }).ToList();
+            await OzelDersContext.SaveChangesAsync();
+        }
+
         public async Task<List<Teacher>> GetByIdBranch(int id)
         {
             return await OzelDersContext
