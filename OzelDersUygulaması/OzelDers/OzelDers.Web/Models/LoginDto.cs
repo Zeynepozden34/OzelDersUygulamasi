@@ -5,9 +5,10 @@ namespace OzelDers.Web.Models
 {
     public class LoginDto
     {
-        [DisplayName("Kullanıcı Adı")]
+        [DisplayName("Email Adresi")]
         [Required(ErrorMessage = "{0} boş bırakılmamalı.")]
-        public string UserName { get; set; }
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
 
         [DisplayName("Şifre")]
         [Required(ErrorMessage = "{0} boş bırakılmamalı.")]

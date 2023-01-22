@@ -2,7 +2,7 @@
 <h1>Yeni Öğretmen Ekleme</h1>
 <hr />
 <form asp-area="Admin"
-      asp-controller="Student"
+      asp-controller="Teacher"
       asp-action="Create"
       method="post"
       enctype="multipart/form-data">
@@ -72,7 +72,7 @@
                 <input class="form-control" asp-for="Description">
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary" asp-area="Admin"asp-controller="Teacher" asp-action="Index">Kaydet</button>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
             <a type="button" class="btn btn-light"
                asp-area="Admin"
                asp-controller="Teacher"
@@ -98,7 +98,7 @@
                 <span asp-validation-for="SelectedBranchId" class="text-danger"></span>
             </div>
             </div>
-
+</div>
 </form>
 
 

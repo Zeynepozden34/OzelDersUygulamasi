@@ -34,6 +34,7 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
         {
             return await OzelDersContext
               .Students
+              .Where(s => s.Url == url)
               .Include(s => s.StudentAndTeachers)
               .ThenInclude(st => st.Teacher)
               .FirstOrDefaultAsync();
@@ -51,6 +52,16 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                     TeacherId=tecId
                 }).ToList();
             await OzelDersContext.SaveChangesAsync();
+        }
+
+        public async Task<Student> GetByIdAsync(int id)
+        {
+            return await OzelDersContext
+              .Students
+              .Where(s=>s.Id==id)
+              .Include(s => s.StudentAndTeachers)
+              .ThenInclude(st => st.Teacher)
+              .FirstOrDefaultAsync();
         }
     }
 }

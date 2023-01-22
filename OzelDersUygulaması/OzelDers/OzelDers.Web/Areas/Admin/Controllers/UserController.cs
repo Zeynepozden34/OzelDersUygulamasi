@@ -7,7 +7,7 @@ using OzelDers.Web.Areas.Admin.Models.Dtos;
 namespace OzelDers.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
-   // [Authorize(Roles = "Admin")]
+   [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly UserManager<User> _userManager;

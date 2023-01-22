@@ -6,6 +6,8 @@ using OzelDers.Data.Abstract;
 using OzelDers.Data.Concrete;
 using OzelDers.Data.Concrete.EfCore.Contexts;
 using OzelDers.Entity.Concrete.Identity;
+using OzelDers.Web.EMailServices.Abstract;
+using OzelDers.Web.EMailServices.Concrete;
 using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -59,6 +61,13 @@ builder.Services.AddScoped<IStudentService, StudentManager>();
 builder.Services.AddScoped<ITeacherService, TeacherManager>();
 builder.Services.AddScoped<IBranchService, BranchManager>();
 
+builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(x => new SmtpEmailSender(
+    builder.Configuration["EmailSender:Host"],
+    builder.Configuration.GetValue<int>("EmailSender:Port"),
+    builder.Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+    builder.Configuration["EmailSender:UserName"],
+    builder.Configuration["EmailSender:Password"]
+    ));
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

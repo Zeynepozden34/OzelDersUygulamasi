@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OzelDers.Business.Abstract;
 using OzelDers.Core;
 using OzelDers.Entity.Concrete;
@@ -7,6 +8,7 @@ using OzelDers.Web.Models;
 
 namespace OzelDers.Web.Controllers
 {
+    [Authorize]
     public class OzelDersController : Controller
     {
         private readonly IBranchService _branchManager;

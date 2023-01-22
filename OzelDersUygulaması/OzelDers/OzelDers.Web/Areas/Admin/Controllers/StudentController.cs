@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OzelDers.Business.Abstract;
 using OzelDers.Business.Concrete;
 using OzelDers.Core;
@@ -8,6 +9,7 @@ using OzelDers.Web.Models;
 
 namespace OzelDers.Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles ="Admin")]
     [Area("Admin")]
     public class StudentController : Controller
     {
@@ -85,6 +87,19 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             }
             studentAddDto.ImageUrl = studentAddDto.ImageUrl;
             return View(studentAddDto);
+        }
+
+        
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var student = await _studentManager.GetByIdAsync(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            _studentManager.Delete(student);
+            return RedirectToAction("Index");
         }
 
     }

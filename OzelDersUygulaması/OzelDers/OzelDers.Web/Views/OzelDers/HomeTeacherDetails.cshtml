@@ -1,45 +1,26 @@
-﻿@model HomeTeacherDetailsDto
-<h1 class="text-danger">@($"{Model.FirstName}{Model.LastName}")</h1>
+﻿@model TeacherListDto
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/Images/@Model.ImageUrl" class="m-1" style="height:100px; width:100px;">
+            <div class="d-grid gap-1 mb-3">
+                <a class="btn btn-warning btn-sm me-md-2 ms-2 mt-2" asp-area="" asp-controller="OzelDers" asp-action="HomeTeacherDetails" asp-route-url="@Model.Url">Detay Gör</a>
+                <button class="btn btn-primary btn-sm  me-md-2 mt-2 ms-2" type="button">Ders Al</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                @foreach (var branch in Model.Branch)
+                {
+                    <h6 class="d-inline">@branch.Name</h6>
+                }
 
-<hr />
-<div class="card mb-3">
-    <img src="/images/@Model.ImageUrl" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title text-black fw-bold display-5">@($"{Model.FirstName}{Model.LastName}")</h5>
-        @foreach (var branch in Model.Branch)
-        {
-            <p class="text-danger display-6 fw-bold" p-0 mb-3">@branch.Name</p>
-        }
+                <h6 class="text-danger">@($"{Model.FirstName} {Model.LastName}")</h6>
+                <h6 class="dislay-6">@Model.UniverstyGraduatedFrom</h6>
+                <p>Açıklama: @Model.Description</p>
+                <h6 class="text-end">@Model.Location</h6>
 
-        <p class="text-danger d-inline">Açıklama: <p class="d-inline">@Model.Description</p></p>
-        <p class="text-danger d-inline">Saatlik Ücret: <p class="d-inline text-black">@($"{Model.HourlyPrice:C2}")</p></p>
-        <p class="text-danger d-inline">Yaş: <p class="text-black d-inline">@Model.Age</p></p>
-        <p class="text-danger d-inline">Mail :<p class="d-inline">@Model.Email</p></p>
-        <p class="text-danger d-inline">Telefon No :<p class="d-inline">@Model.Phone</p></p>
-        <p class="text-danger d-inline">Mezun olduğu okul: <p class="d-inline">@Model.UniverstyGraduatedFrom</p></p>
-        <p class="text-danger d-inline">Onaylı Üye mi: <p class="d-inline">@Model.CertifiedTrainer</p></p>
-        <p class="text-danger d-inline">Lokasyon: <p class="d-inline">@Model.Location</p></p>
-        
-
+            </div>
+        </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

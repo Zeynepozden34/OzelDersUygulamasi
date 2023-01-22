@@ -1,11 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OzelDers.Business.Abstract;
 using OzelDers.Core;
 using OzelDers.Entity.Concrete;
+using OzelDers.Entity.Concrete.Identity;
 using OzelDers.Web.Areas.Admin.Models.Dtos;
+using OzelDers.Web.Models;
+using TeacherListDto = OzelDers.Web.Areas.Admin.Models.Dtos.TeacherListDto;
 
 namespace OzelDers.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class TeacherController : Controller
     {
@@ -13,12 +20,16 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         private readonly ITeacherService _teacherManager;
         private readonly IStudentService _studentManager;
         private readonly IBranchService _branchManager;
+        private readonly UserManager<User> _userManager;
+        private readonly RoleManager<Role> _roleManager;
 
-        public TeacherController(ITeacherService teacherManager, IStudentService studentManager, IBranchService branchManager)
+        public TeacherController(ITeacherService teacherManager, IStudentService studentManager, IBranchService branchManager, UserManager<User> userManager = null, RoleManager<Role> roleManager = null)
         {
             _teacherManager = teacherManager;
             _studentManager = studentManager;
             _branchManager = branchManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public async Task<IActionResult> Index()
@@ -37,7 +48,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                         IsFacetoFace = teacher.IsFacetoFace,
                         CertifiedTrainer = teacher.CertifiedTrainer,
                         Email = teacher.Email,
-                        Phone= teacher.Phone,
+                        Phone = teacher.Phone,
                         FirstName = teacher.FirstName,
                         LastName = teacher.LastName,
                         Description = teacher.Description,
@@ -77,7 +88,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 IsFacetoFace = teacher.IsFacetoFace,
                 CertifiedTrainer = teacher.CertifiedTrainer,
                 Email = teacher.Email,
-                Phone= teacher.Phone,
+                Phone = teacher.Phone,
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Description = teacher.Description,
@@ -113,6 +124,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 var url = Jobs.InitUrL(teacherAddDto.FirstName);
                 var teacher = new Teacher
                 {
@@ -129,16 +141,31 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     Location = teacherAddDto.Location,
                     Url = url,
                     ImageUrl = Jobs.UploadImage(teacherAddDto.ImageFile),
-                    
+
 
                 };
                 await _teacherManager.CreateTeacherAsync(teacher, teacherAddDto.SelectedBranchId);
-                return RedirectToAction("Index","teacher");
+                return RedirectToAction("Index");
             }
             var branchs = await _branchManager.GetAllAsync();
             teacherAddDto.Branchs = branchs;
             teacherAddDto.ImageUrl = teacherAddDto.ImageUrl;
+
             return View(teacherAddDto);
         }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var teacher = await _teacherManager.GetByIdAsync(id);
+            if (teacher == null)
+            {
+                return NotFound();
+            }
+            _teacherManager.Delete(teacher);
+            return RedirectToAction("Index");
+        }
+
     }
 }
