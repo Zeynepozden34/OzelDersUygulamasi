@@ -1,4 +1,5 @@
-﻿using OzelDers.Entity.Concrete;
+﻿using OzelDers.Data.Concrete;
+using OzelDers.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,11 @@ namespace OzelDers.Data.Abstract
         Task<List<Teacher>> GetHomePageTeachersAsync();
         Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl);
         Task<List<Teacher>> GetTeacherWithAll();
+        Task<Teacher> GetTeacherWithAll(int id);
         Task<Teacher> GetTeacherDetailsByUrlAsync(string url);
+        
         Task CreateTeacherAsync(Teacher teacher, int[]? SelectedBranchId);
-       
+        Task UpdateTeacherAsync(Teacher teacher, int[]? selectedBranchId, int[]? selectedStudentId);
+
     }
 }

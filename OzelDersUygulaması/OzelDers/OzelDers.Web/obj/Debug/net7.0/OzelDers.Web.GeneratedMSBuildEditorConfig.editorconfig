@@ -9,133 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OzelDers.Web
 build_property.RootNamespace = OzelDers.Web
-build_property.ProjectDir = C:\Users\Casper\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\
+build_property.ProjectDir = C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Casper\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web
+build_property.MSBuildProjectDirectory = C:\Users\SABAH\Documents\GitHub\OzelDersUygulamasi\OzelDersUygulaması\OzelDers\OzelDers.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Role/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_AdminSideBarPartial.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_AdminSideBarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pblNpZGVCYXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Student/Create.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Student/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/Create.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/TeacherDetails.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/Teacher/TeacherDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlclxUZWFjaGVyRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/User/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/AccessDenied.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ConfirmEmail.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ForgotPassword.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Login.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Manage.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Register.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ResetPassword.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Home/Index.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/OzelDers/HomeTeacherDetails.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/OzelDers/HomeTeacherDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbERlcnNcSG9tZVRlYWNoZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/OzelDers/TeacherList.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/OzelDers/TeacherList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbERlcnNcVGVhY2hlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/Components/Branch/Default.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/Components/Branch/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQnJhbmNoXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_BranchPartial.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_BranchPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CcmFuY2hQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Navbar.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_TeacherPartial.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_TeacherPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZWFjaGVyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/_ViewImports.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/_ViewStart.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Casper/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5om4lvbn8a

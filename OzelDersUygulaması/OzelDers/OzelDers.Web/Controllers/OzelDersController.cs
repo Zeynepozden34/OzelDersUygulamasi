@@ -91,6 +91,17 @@ namespace OzelDers.Web.Controllers
             };
             return View(homeTeacherDetailsDtos);
         }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var teacher = await _teacherManager.GetByIdAsync(id);
+            if (teacher == null)
+            {
+                return NotFound();
+            }
+            _teacherManager.Delete(teacher);
+            return RedirectToAction("TeacherList");
+        }
 
     }
 }

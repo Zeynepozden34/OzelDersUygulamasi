@@ -22,8 +22,8 @@
                         <h6 class="dislay-6">@teacher.UniverstyGraduatedFrom</h6>
                         <p>Açıklama: @teacher.Description</p>
                         <h6 class="">@teacher.Location</h6>
-                        <a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="Teacher" asp-action="TeacherDetails" asp-route-url="@teacher.Url class="btn btn-primary">Detay Gör</a>
-                          <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" class="btn btn-danger m-2 btn-sm">Sil</a>
+                        <a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="Teacher" asp-action="TeacherDetails" asp-route-url="@teacher.Url" class="btn btn-primary">Detay Gör</a>
+                          <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" asp-route-id="@teacher.Id" class="btn btn-danger m-2 btn-sm">Sil</a>
                     </div>
                 </div>
             </div>

@@ -85,5 +85,44 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                 .ThenInclude(tas=>tas.Student)
                 .ToListAsync();
         }
+
+        public async Task<Teacher> GetTeacherWithAll(int id)
+        {
+            return await OzelDersContext
+             .Teachers
+             .Where(t => t.Id == id)
+             .Include(t => t.TeacherAndBranches)
+             .ThenInclude(tab => tab.Branch)
+             .Include(t => t.StudentAndTeachers)
+             .ThenInclude(tas => tas.Student)
+             .FirstOrDefaultAsync();
+        }
+
+        public async Task UpdateTeacherAsync(Teacher teacher, int[] selectedBranchId, int[] selectedStudentId)
+        {
+            Teacher newTeacher = await OzelDersContext
+                 .Teachers
+                 .Include(p => p.TeacherAndBranches)                
+                 .FirstOrDefaultAsync(p => p.Id == teacher.Id);
+            newTeacher.TeacherAndBranches = selectedBranchId
+                .Select(brId => new TeacherAndBranch
+                {
+                    TeacherId = newTeacher.Id,
+                    BranchId = brId
+                }).ToList();
+
+             await OzelDersContext
+                 .Teachers
+                 .Include(p => p.StudentAndTeachers)
+                 .FirstOrDefaultAsync(p => p.Id == teacher.Id);
+            newTeacher.StudentAndTeachers = selectedStudentId
+                .Select(stId => new StudentAndTeacher
+                {
+                    TeacherId = newTeacher.Id,
+                    StudentId = stId
+                }).ToList();
+            OzelDersContext.Update(newTeacher);
+            await OzelDersContext.SaveChangesAsync();
+        }
     }
 }

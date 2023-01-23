@@ -66,10 +66,20 @@ namespace OzelDers.Business.Concrete
             return await _unitOfWork.Teachers.GetTeacherWithAll();
         }
 
+        public async Task<Teacher> GetTeacherWithAll(int id)
+        {
+            return await _unitOfWork.Teachers.GetTeacherWithAll(id);
+        }
+
         public void Update(Teacher teacher)
         {
            _unitOfWork.Teachers.Update(teacher);
             _unitOfWork.Save();
+        }
+
+        public async Task UpdateTeacherAsync(Teacher teacher, int[] selectedBranchId, int[] selectedStudentId)
+        {
+            await _unitOfWork.Teachers.UpdateTeacherAsync(teacher, selectedBranchId, selectedStudentId);
         }
     }
 }
