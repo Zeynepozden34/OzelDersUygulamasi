@@ -65,4 +65,37 @@ public class HomeController : Controller
         }
         return View(teacherDtos);
     }
+    public async Task<IActionResult> Search(string q) 
+    {
+        List<Teacher> searchResults = await _teacherManager.GetSearchResultsAsync(q);
+        List<TeacherDto> teacherDtos = new List<TeacherDto>();
+        foreach (var teacher in searchResults)
+        {
+            teacherDtos.Add(new TeacherDto
+            {
+                Id = teacher.Id,
+                UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
+                HourlyPrice = teacher.HourlyPrice,
+                IsFacetoFace = teacher.IsFacetoFace,
+                CertifiedTrainer = teacher.CertifiedTrainer,
+                Email = teacher.Email,
+                Phone = teacher.Phone,
+                FirstName = teacher.FirstName,
+                LastName = teacher.LastName,
+                Description = teacher.Description,
+                Age = teacher.Age,
+                Gender = teacher.Gender,
+                ImageUrl = teacher.ImageUrl,
+                Location = teacher.Location,
+                Url = teacher.Url,
+                Branch = teacher
+                .TeacherAndBranches
+                .Select(tab => tab.Branch)
+                .ToList()
+
+            });
+        }
+        return View(teacherDtos);
+    }
+
 }

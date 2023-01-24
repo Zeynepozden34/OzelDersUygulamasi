@@ -21,6 +21,7 @@ namespace OzelDers.Business.Abstract
         Task<Teacher> GetTeacherDetailsByUrlAsync(string url); // Öğretmen Detayları getirilecek
         Task CreateTeacherAsync(Teacher teacher, int[]? SelectedBranchId);
         Task UpdateTeacherAsync(Teacher teacher, int[]? selectedBranchId, int[]? selectedStudentId);
+        Task<List<Teacher>> GetSearchResultsAsync(string searchString);
 
 
 

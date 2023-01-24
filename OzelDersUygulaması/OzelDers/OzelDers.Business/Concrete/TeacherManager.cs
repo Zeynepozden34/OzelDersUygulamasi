@@ -51,6 +51,11 @@ namespace OzelDers.Business.Concrete
             return await _unitOfWork.Teachers.GetHomePageTeachersAsync();
         }
 
+        public async Task<List<Teacher>> GetSearchResultsAsync(string searchString)
+        {
+            return await _unitOfWork.Teachers.GetSearchResultsAsync(searchString);
+        }
+
         public async Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl)
         {
             return await _unitOfWork.Teachers.GetTeacherByBranchAsync(branchurl);

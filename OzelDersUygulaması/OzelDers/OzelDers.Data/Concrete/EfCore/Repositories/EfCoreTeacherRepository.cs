@@ -50,6 +50,15 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<Teacher>> GetSearchResultsAsync(string searchString)
+        {
+            searchString = searchString.ToLower();
+            var result = OzelDersContext.Teachers.Include(t => t.TeacherAndBranches).ThenInclude(tb => tb.Branch).AsQueryable();
+            return await result.Where(p => p.FirstName.ToLower().Contains(searchString) || p.Description.ToLower().Contains(searchString))
+              .ToListAsync();
+
+        }
+
         public async Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl)
         {
             var teachers = OzelDersContext.Teachers.AsQueryable();

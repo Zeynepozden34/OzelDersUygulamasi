@@ -19,6 +19,7 @@ namespace OzelDers.Data.Abstract
         
         Task CreateTeacherAsync(Teacher teacher, int[]? SelectedBranchId);
         Task UpdateTeacherAsync(Teacher teacher, int[]? selectedBranchId, int[]? selectedStudentId);
+        Task<List<Teacher>> GetSearchResultsAsync(string searchString);
 
     }
 }

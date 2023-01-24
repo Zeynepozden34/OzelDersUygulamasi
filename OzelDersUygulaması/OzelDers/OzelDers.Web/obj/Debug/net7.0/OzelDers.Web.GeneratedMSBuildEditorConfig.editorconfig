@@ -128,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/OzelDers/HomeTeacherDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3plbERlcnNcSG9tZVRlYWNoZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -150,6 +154,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_NoTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob1RlYWNoZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_SearchTeacherPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2hUZWFjaGVyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SABAH/Documents/GitHub/OzelDersUygulamasi/OzelDersUygulaması/OzelDers/OzelDers.Web/Views/Shared/_TeacherPartial.cshtml]
