@@ -23,5 +23,8 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [Required(ErrorMessage = "{0} alanı zorunludur.")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        [DisplayName("Email Onayı")]
+        public bool EmailConfirmed { get; set; }
     }
 }

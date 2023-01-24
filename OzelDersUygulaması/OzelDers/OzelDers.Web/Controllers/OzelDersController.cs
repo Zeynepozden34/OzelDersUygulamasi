@@ -91,6 +91,8 @@ namespace OzelDers.Web.Controllers
             };
             return View(homeTeacherDetailsDtos);
         }
+
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
@@ -100,7 +102,7 @@ namespace OzelDers.Web.Controllers
                 return NotFound();
             }
             _teacherManager.Delete(teacher);
-            return RedirectToAction("TeacherList");
+            return RedirectToAction("Index");
         }
 
     }

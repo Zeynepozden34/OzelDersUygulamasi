@@ -31,7 +31,7 @@
             }
         </p>
         <p class="m-3"><a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Düzenle</a>
-            <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" class="btn btn-danger m-2">Sil</a>
+            <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger m-2">Sil</a>
         </p>
 
     </div>

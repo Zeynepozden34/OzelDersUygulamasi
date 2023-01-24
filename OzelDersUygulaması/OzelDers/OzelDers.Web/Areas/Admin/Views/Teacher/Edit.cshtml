@@ -72,12 +72,14 @@
                 <a type="button" class="btn btn-danger btn-sm"
                asp-area="Admin"
                asp-controller="Teacher"
-               asp-action="Delete" >Sil</a>
+               asp-action="Delete"
+               asp-route-id="@Model.Id">Sil</a>
 
             <a type="button" class="btn btn-light btn-sm"
                asp-area="Admin"
                asp-controller="Teacher"
-               asp-action="Index">Vazgeç</a>
+               asp-action="Index"                
+            >Vazgeç</a>
         </div>
         <div class="col-6">
             <div class="mb-3">

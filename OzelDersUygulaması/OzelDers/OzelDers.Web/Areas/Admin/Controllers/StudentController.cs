@@ -101,6 +101,62 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             _studentManager.Delete(student);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var student = await _studentManager.GetStudentWithTeacher(id);
+            StudentUpdateDto studentUpdateDto = new StudentUpdateDto
+            {
+                Id = student.Id,
+                Email = student.Email,
+                Phone = student.Phone,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                Description = student.Description,
+                Age = student.Age,
+                Gender = student.Gender,
+                ImageUrl = student.ImageUrl,
+                Location = student.Location,
+                Url = Jobs.InitUrL(student.FirstName),
+                SelectedTeacherId = student
+                .StudentAndTeachers
+                .Select(pc => pc.TeacherId).ToArray()
+            };
+            var teachers = await _teacherManager.GetAllAsync();
+            studentUpdateDto.Teachers = teachers;
+            return View(studentUpdateDto);
+            
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(StudentUpdateDto studentUpdateDto, int[] selectedTeacherId)
+        {
+            if (ModelState.IsValid)
+            {
+                var student = await _studentManager.GetByIdAsync(studentUpdateDto.Id);
+                if (student == null)
+                {
+                    return NotFound();
+                }
+                var url = Jobs.InitUrL(studentUpdateDto.FirstName);
+                var imageUrl = studentUpdateDto.ImageFile != null ? Jobs.UploadImage(studentUpdateDto.ImageFile) : student.ImageUrl;
+                student.Id = studentUpdateDto.Id;
+                student.Email = studentUpdateDto.Email;
+                student.Phone = studentUpdateDto.Phone;
+                student.FirstName = studentUpdateDto.FirstName;
+                student.LastName = studentUpdateDto.LastName;
+                student.Description = studentUpdateDto.Description;
+                student.Age = studentUpdateDto.Age;
+                student.Gender = studentUpdateDto.Gender;
+                student.ImageUrl = imageUrl;
+                student.Location = studentUpdateDto.Location;
+                student.Url = url;
+                await _studentManager.UpdateStudentAsync(student, selectedTeacherId);
+
+            }           
+            var teachers = await _teacherManager.GetAllAsync();
+            studentUpdateDto.Teachers = teachers;
+            return RedirectToAction("Index");
+        }
 
     }
 }

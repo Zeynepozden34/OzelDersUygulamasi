@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Newtonsoft.Json;
+@using OzelDers.Core;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,12 +11,27 @@
     <link rel="stylesheet" href="~/OzelDers.Web.styles.css" asp-append-version="true" />
 </head>
 <body>
-    @await Html.PartialAsync("_Navbar")
+   
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        @await Html.PartialAsync("_Navbar")
+        <div class="container">
+            <main role="main" class="pb-3">
+                @if (TempData["Message"] != null)
+                {
+                    var msg = JsonConvert.DeserializeObject<AlertMessage>(TempData["Message"] as String);
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-@msg.AlertType">
+                                <div>@msg.Title</div>
+                                <div>@msg.Message</div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+                @RenderBody()
+            </main>
+        </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
