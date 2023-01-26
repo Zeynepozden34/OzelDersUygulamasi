@@ -105,9 +105,9 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     .TeacherAndBranches
                     .Select(tab => tab.Branch)
                     .ToList(),
-                Students=teacher
+                Students = teacher
                 .StudentAndTeachers
-                .Select(tas=>tas.Student)
+                .Select(tas => tas.Student)
                 .ToList()
             };
             return View(teacherDetailsDtos);
@@ -116,6 +116,14 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
+            List<UserDto> users = _userManager.Users.Select(u => new UserDto
+            {
+                Id = u.Id,
+                FirstName = u.FirstName,
+                LastName = u.LastName,
+                UserName = u.UserName,
+                Email = u.Email
+            }).ToList();
             var branchs = await _branchManager.GetAllAsync();
             var teacherAddDto = new TeacherAddDto
             {
@@ -126,36 +134,56 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(TeacherAddDto teacherAddDto)
         {
+
             if (ModelState.IsValid)
             {
-
-                var url = Jobs.InitUrL(teacherAddDto.FirstName);
-                var teacher = new Teacher
+                var user = new User
                 {
-
                     FirstName = teacherAddDto.FirstName,
                     LastName = teacherAddDto.LastName,
-                    UniverstyGraduatedFrom = teacherAddDto.UniverstyGraduatedFrom,
-                    HourlyPrice = teacherAddDto.HourlyPrice,
                     Email = teacherAddDto.Email,
-                    Age = teacherAddDto.Age,
-                    Gender = teacherAddDto.Gender,
-                    Phone = teacherAddDto.Phone,
-                    Description = teacherAddDto.Description,
-                    Location = teacherAddDto.Location,
-                    Url = url,
-                    ImageUrl = Jobs.UploadImage(teacherAddDto.ImageFile),
-
+                    UserName = (teacherAddDto.FirstName + teacherAddDto.LastName).ToLower()
 
                 };
-                await _teacherManager.CreateTeacherAsync(teacher, teacherAddDto.SelectedBranchId);
-                return RedirectToAction("Index");
+                var result = await _userManager.CreateAsync(user, "Qwe123.");
+
+                if (result.Succeeded)
+                {
+                    var url = Jobs.InitUrL(teacherAddDto.FirstName);
+                    var teacher = new Teacher
+                    {
+                        FirstName = teacherAddDto.FirstName,
+                        LastName = teacherAddDto.LastName,
+                        UniverstyGraduatedFrom = teacherAddDto.UniverstyGraduatedFrom,
+                        HourlyPrice = teacherAddDto.HourlyPrice,
+                        Email = teacherAddDto.Email,
+                        Age = teacherAddDto.Age,
+                        Gender = teacherAddDto.Gender,
+                        Phone = teacherAddDto.Phone,
+                        Description = teacherAddDto.Description,
+                        Location = teacherAddDto.Location,
+                        Url = url,
+                        ImageUrl = Jobs.UploadImage(teacherAddDto.ImageFile),
+                        UserId = user.Id
+                    };
+                    await _teacherManager.CreateTeacherAsync(teacher, teacherAddDto.SelectedBranchId);
+                    var role = await _userManager.AddToRoleAsync(user, "Teacher");
+                    TempData["Message"] = Jobs.CreateMessage("Başarılı", $"{user.UserName} kullanıcısı başarıyla oluşturuldu.", "success");
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return RedirectToAction("Index");
+                }               
+             
+
             }
             var branchs = await _branchManager.GetAllAsync();
             teacherAddDto.Branchs = branchs;
             teacherAddDto.ImageUrl = teacherAddDto.ImageUrl;
-
             return View(teacherAddDto);
+            
+            
         }
 
         [Authorize(Roles = "Admin")]
@@ -197,7 +225,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 SelectedStudentId = teacher
                 .StudentAndTeachers
                 .Select(pc => pc.StudentId).ToArray()
-                
+
 
             };
             var branchs = await _branchManager.GetAllAsync();
@@ -212,7 +240,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var teacher = await _teacherManager.GetByIdAsync(teacherUpdateDto.Id);
-                if (teacher==null)
+                if (teacher == null)
                 {
                     return NotFound();
                 }
@@ -230,7 +258,7 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 teacher.Description = teacherUpdateDto.Description;
                 teacher.Age = teacherUpdateDto.Age;
                 teacher.Gender = teacherUpdateDto.Gender;
-                teacher.ImageUrl =imageUrl;
+                teacher.ImageUrl = imageUrl;
                 teacher.Location = teacherUpdateDto.Location;
                 teacher.Url = url;
                 await _teacherManager.UpdateTeacherAsync(teacher, selectedBranchId, selectedStudentId);
@@ -244,3 +272,4 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         }
     }
 }
+

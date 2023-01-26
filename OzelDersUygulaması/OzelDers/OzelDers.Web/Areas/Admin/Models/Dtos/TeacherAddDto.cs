@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using OzelDers.Entity.Concrete;
+using OzelDers.Entity.Concrete.Identity;
 
 namespace OzelDers.Web.Areas.Admin.Models.Dtos
 {
@@ -10,7 +11,6 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
 
         public string FirstName { get; set; }
-
         [DisplayName("Öğretmen Soyadı")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
 
@@ -32,8 +32,8 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [DisplayName("Email")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
         [DataType(DataType.EmailAddress)]
-
         public string Email { get; set; }
+
 
         [DisplayName("Telefon Numarası")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
@@ -62,5 +62,10 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
         [DisplayName("Lokasyon")]
         [Required(ErrorMessage = "{0} boş bırakılmamalıdır.")]
         public string Location { get; set; }
+
+        public int UserId { get; set; }
+        public User user { get; set; }
+
+
     }
 }

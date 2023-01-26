@@ -2,33 +2,31 @@
 <h1 class="text-danger">@($"{Model.FirstName} {Model.LastName}")</h1>
 
 <hr />
-<
-    <div class="card mb-3">
-        <div class="col-12">
-        <img src="/images/@Model.ImageUrl" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title text-black fw-bold display-5">@($"{Model.FirstName} {Model.LastName}")</h5>
-            @foreach (var branch in Model.Branch)
-            {
-                <p class="text-danger d-inline mb-2 pe-2 display-6 fw-bold" p-0 mb-3">@branch.Name</p>
-            }
+<div class="card mb-3">
 
-            <p class="text-danger">Açıklama: <p class="d-inline">@Model.Description</p></p>
-            <p class="text-danger d-inline">Saatlik Ücret: <p class="d-inline text-black">@($"{Model.HourlyPrice:C2}")</p></p>
-            <p class="text-danger d-inline">Yaş: <p class="text-black d-inline">@Model.Age</p></p>
-            <p class="text-danger d-inline">Mail :<p class="d-inline">@Model.Email</p></p>
-            <p class="text-danger d-inline">Telefon No :<p class="d-inline">@Model.Phone</p></p>
-            <p class="text-danger d-inline">Mezun olduğu okul: <p class="d-inline">@Model.UniverstyGraduatedFrom</p></p>
-            <p class="text-danger d-inline">Onaylı Üye mi: <p class="d-inline">@Model.CertifiedTrainer</p></p>
-            <p class="text-danger d-inline">Lokasyon: <p class="d-inline">@Model.Location</p></p>
-            <p class="m-3">
-                <a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Düzenle</a>
-                <a asp-controller="OzelDers" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger m-2">Sil</a>
-            </p>
+    <img src="/images/@Model.ImageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title text-black fw-bold display-5">@($"{Model.FirstName} {Model.LastName}")</h5>
+        @foreach (var branch in Model.Branch)
+        {
+            <p class="text-danger d-inline mb-2 pe-2 display-6 fw-bold" p-0 mb-3">@branch.Name</p>
+        }
 
-        </div>
+        <p class="text-danger">Açıklama: <p class="d-inline">@Model.Description</p></p>
+        <p class="text-danger d-inline">Saatlik Ücret: <p class="d-inline text-black">@($"{Model.HourlyPrice:C2}")</p></p>
+        <p class="text-danger d-inline">Yaş: <p class="text-black d-inline">@Model.Age</p></p>
+        <p class="text-danger d-inline">Mail :<p class="d-inline">@Model.Email</p></p>
+        <p class="text-danger d-inline">Telefon No :<p class="d-inline">@Model.Phone</p></p>
+        <p class="text-danger d-inline">Mezun olduğu okul: <p class="d-inline">@Model.UniverstyGraduatedFrom</p></p>
+        <p class="text-danger d-inline">Onaylı Üye mi: <p class="d-inline">@Model.CertifiedTrainer</p></p>
+        <p class="text-danger d-inline">Lokasyon: <p class="d-inline">@Model.Location</p></p>
+        <p class="m-3">
+            <a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Düzenle</a>
+            <a asp-controller="OzelDers" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger m-2">Sil</a>
+        </p>
+
     </div>
 
-        </div>
-       
+</div>
+
 
