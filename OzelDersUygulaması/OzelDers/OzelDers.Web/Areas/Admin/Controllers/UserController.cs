@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using OzelDers.Business.Abstract;
 using OzelDers.Core;
+using OzelDers.Entity.Concrete;
 using OzelDers.Entity.Concrete.Identity;
 using OzelDers.Web.Areas.Admin.Models.Dtos;
+using System;
 
 namespace OzelDers.Web.Areas.Admin.Controllers
 {
@@ -13,11 +16,15 @@ namespace OzelDers.Web.Areas.Admin.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
+        private readonly ITeacherService _teacherManager;
+        private readonly IStudentService _StudentManager;
 
-        public UserController(UserManager<User> userManager, RoleManager<Role> roleManager)
+        public UserController(UserManager<User> userManager, RoleManager<Role> roleManager, ITeacherService teacherManager, IStudentService studentManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _teacherManager = teacherManager;
+            _StudentManager = studentManager;
         }
 
         public IActionResult Index()
@@ -58,16 +65,52 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             {
                 var user = new User
                 {
-                    FirstName = userAddDto.UserDto.FirstName,
-                    LastName = userAddDto.UserDto.LastName,
-                    UserName = userAddDto.UserDto.UserName,
-                    Email = userAddDto.UserDto.Email,
-                    EmailConfirmed = userAddDto.UserDto.EmailConfirmed
+                    FirstName = userAddDto.FirstName,
+                    LastName = userAddDto.LastName,
+                    UserName = userAddDto.UserName,
+                    Email = userAddDto.Email,
+                    EmailConfirmed = userAddDto.EmailConfirmed
                 };
+                foreach (var role in userAddDto.SelectedRoles)
+                {
+                    var userRole = await _roleManager.FindByNameAsync(role);
+
+                    if (userRole.Name == "Teacher")
+                    {
+                        
+                        var teacher = new Teacher
+                        {
+                            FirstName = userAddDto.FirstName,
+                            LastName = userAddDto.LastName,
+                            UserName = userAddDto.UserName,
+                            Email = userAddDto.Email,
+                            EmailConfirmed = userAddDto.EmailConfirmed,
+                            
+
+                        };
+                        await _teacherManager.CreateAsync(teacher);
+
+                    }
+                    else if (userRole.Name == "Student")
+                    {
+                        var student = new Student
+                        {
+                            FirstName = userAddDto.FirstName,
+                            LastName = userAddDto.LastName,
+                            UserName = userAddDto.UserName,
+                            Email = userAddDto.Email,
+                            EmailConfirmed = userAddDto.EmailConfirmed,
+                            
+
+                        };
+                        await _StudentManager.CreateAsync(student);
+                    }
+                }
                 var result = await _userManager.CreateAsync(user, "Qwe123.");
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRolesAsync(user, userAddDto.SelectedRoles);
+
                     TempData["Message"] = Jobs.CreateMessage("Başarılı", $"{user.UserName} kullanıcısı başarıyla oluşturuldu.", "success");
                     return RedirectToAction("Index", "User");
                 }
@@ -98,7 +141,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     LastName = user.LastName,
                     Email = user.Email,
                     EmailConfirmed = user.EmailConfirmed,
-                    UserName = user.UserName
+                    UserName = user.UserName,
+                    
                 },
                 SelectedRoles = await _userManager.GetRolesAsync(user),
                 Roles = _roleManager.Roles.Select(r => new RoleDto
@@ -115,13 +159,15 @@ namespace OzelDers.Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByIdAsync(userUpdateDto.UserDto.Id);
+                var user = await _userManager.FindByIdAsync(userUpdateDto.Id);
                 if (user == null) { return NotFound(); }
-                user.FirstName = userUpdateDto.UserDto.FirstName;
-                user.LastName = userUpdateDto.UserDto.LastName;
-                user.UserName = userUpdateDto.UserDto.UserName;
-                user.Email = userUpdateDto.UserDto.Email;
-                user.EmailConfirmed = userUpdateDto.UserDto.EmailConfirmed;
+                user.FirstName = userUpdateDto.FirstName;
+                user.LastName = userUpdateDto.LastName;
+                user.UserName = userUpdateDto.UserName;
+                user.Email = userUpdateDto.Email;
+                user.EmailConfirmed = userUpdateDto.EmailConfirmed;
+                user.UserName = userUpdateDto.UserName;
+                
 
                 var result = await _userManager.UpdateAsync(user);
                 if (!result.Succeeded) { return NotFound(); }
@@ -154,7 +200,9 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            _userManager.DeleteAsync(user);
+            await _userManager.DeleteAsync(user);
+
+
             return RedirectToAction("Index");
         }
     }

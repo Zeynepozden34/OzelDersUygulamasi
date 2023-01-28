@@ -35,8 +35,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                         Id = teacher.Id,                     
                         FirstName = teacher.FirstName,
                         LastName = teacher.LastName,
-                        Email= teacher.Email,
-                        Phone= teacher.Phone,
                         Description = teacher.Description,
                         Age = teacher.Age,
                         Gender = teacher.Gender,
@@ -72,10 +70,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                   
                    FirstName=studentAddDto.FirstName,
                    LastName=studentAddDto.LastName,
-                   Email=studentAddDto.Email,
                    Age=studentAddDto.Age,
                    Gender=studentAddDto.Gender,
-                   Phone=studentAddDto.Phone,
                    Description=studentAddDto.Description,
                    Location=studentAddDto.Location,
                    Url=url,
@@ -108,8 +104,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             StudentUpdateDto studentUpdateDto = new StudentUpdateDto
             {
                 Id = student.Id,
-                Email = student.Email,
-                Phone = student.Phone,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Description = student.Description,
@@ -140,8 +134,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 var url = Jobs.InitUrL(studentUpdateDto.FirstName);
                 var imageUrl = studentUpdateDto.ImageFile != null ? Jobs.UploadImage(studentUpdateDto.ImageFile) : student.ImageUrl;
                 student.Id = studentUpdateDto.Id;
-                student.Email = studentUpdateDto.Email;
-                student.Phone = studentUpdateDto.Phone;
                 student.FirstName = studentUpdateDto.FirstName;
                 student.LastName = studentUpdateDto.LastName;
                 student.Description = studentUpdateDto.Description;

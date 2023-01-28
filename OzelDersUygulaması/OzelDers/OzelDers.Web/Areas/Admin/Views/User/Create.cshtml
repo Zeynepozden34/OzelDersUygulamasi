@@ -7,24 +7,24 @@
         <div asp-validation-summary="All" class="text-danger"></div>
         <div class="col-8">
             <div class="mb-3">
-                <label asp-for="UserDto.FirstName" class="form-label"></label>
-                <input class="form-control" asp-for="UserDto.FirstName">
-                <span asp-validation-for="UserDto.FirstName" class="text-danger"></span>
+                <label asp-for="FirstName" class="form-label"></label>
+                <input class="form-control" asp-for="FirstName">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="UserDto.LastName" class="form-label"></label>
-                <input class="form-control" asp-for="UserDto.LastName">
-                <span asp-validation-for="UserDto.LastName" class="text-danger"></span>
+                <label asp-for="LastName" class="form-label"></label>
+                <input class="form-control" asp-for="LastName">
+                <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="UserDto.UserName" class="form-label"></label>
-                <input class="form-control" asp-for="UserDto.UserName">
-                <span asp-validation-for="UserDto.UserName" class="text-danger"></span>
+                <label asp-for="UserName" class="form-label"></label>
+                <input class="form-control" asp-for="UserName">
+                <span asp-validation-for="UserName" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="UserDto.Email" class="form-label"></label>
-                <input class="form-control" asp-for="UserDto.Email">
-                <span asp-validation-for="UserDto.Email" class="text-danger"></span>
+                <label asp-for="Email" class="form-label"></label>
+                <input class="form-control" asp-for="Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <button type="submit" class="btn btn-primary">Oluştur</button>
@@ -51,9 +51,12 @@
             <div class="form-check">
                 <input class="form-check-input"
                        type="checkbox"
-                       asp-for="UserDto.EmailConfirmed" />
-                <label asp-for="UserDto.EmailConfirmed" class="form-check-label"></label>
+                       asp-for="EmailConfirmed" />
+                <label asp-for="EmailConfirmed" class="form-check-label"></label>
             </div>
         </div>
     </div>
 </form>
+
+
+

@@ -1,6 +1,7 @@
 ﻿using OzelDers.Business.Abstract;
 using OzelDers.Data.Abstract;
 using OzelDers.Entity.Concrete;
+using OzelDers.Entity.Concrete.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,11 @@ namespace OzelDers.Business.Concrete
         public async Task CreateTeacherAsync(Teacher teacher, int[] SelectedBranchId)
         {
             await _unitOfWork.Teachers.CreateTeacherAsync(teacher, SelectedBranchId);
+        }
+
+        public async Task CreateTeacherAsync(Teacher teacher)
+        {
+            await _unitOfWork.Teachers.CreateTeacherAsync(teacher);
         }
 
         public void Delete(Teacher teacher)
@@ -59,6 +65,11 @@ namespace OzelDers.Business.Concrete
         public async Task<List<Teacher>> GetTeacherByBranchAsync(string branchurl)
         {
             return await _unitOfWork.Teachers.GetTeacherByBranchAsync(branchurl);
+        }
+
+        public async Task<Teacher> GetTeacherDetailsByIdAsync(int id)
+        {
+            return await _unitOfWork.Teachers.GetTeacherDetailsByIdAsync(id);
         }
 
         public async Task<Teacher> GetTeacherDetailsByUrlAsync(string url)

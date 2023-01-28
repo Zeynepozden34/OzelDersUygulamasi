@@ -97,10 +97,8 @@ namespace OzelDers.Web.Controllers
                             {
                                 FirstName = registerDto.FirstName,
                                 LastName = registerDto.LastName,
-                                Email = registerDto.Email,
                                 UserId = user.Id,
                                 Description = registerDto.Description,
-                                Phone = registerDto.Phone,
                                 Gender = registerDto.Gender,
                                 Url = user.UserName,
                                 ImageUrl = Jobs.UploadImage(registerDto.ImageFile),
@@ -118,11 +116,8 @@ namespace OzelDers.Web.Controllers
                             {
                                 FirstName = registerDto.FirstName,
                                 LastName = registerDto.LastName,
-                                Email = registerDto.Email,
                                 UserId = user.Id,
-
                                 Description = registerDto.Description,
-                                Phone = registerDto.Phone,
                                 Gender = registerDto.Gender,
                                 Url = user.UserName,
                                 Location = registerDto.Location,

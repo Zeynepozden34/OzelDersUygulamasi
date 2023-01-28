@@ -1,4 +1,5 @@
 ﻿using OzelDers.Entity.Concrete;
+using OzelDers.Entity.Concrete.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,10 @@ namespace OzelDers.Business.Abstract
         Task<List<Teacher>> GetTeacherWithAll(); // Teacherları branş ve öğrencisiyle getirecek.
         Task<Teacher> GetTeacherWithAll(int id);
         Task<Teacher> GetTeacherDetailsByUrlAsync(string url); // Öğretmen Detayları getirilecek
+        Task<Teacher> GetTeacherDetailsByIdAsync(int id); // Öğretmen Detayları getirilecek
+
         Task CreateTeacherAsync(Teacher teacher, int[]? SelectedBranchId);
+        Task CreateTeacherAsync(Teacher teacher);
         Task UpdateTeacherAsync(Teacher teacher, int[]? selectedBranchId, int[]? selectedStudentId);
         Task<List<Teacher>> GetSearchResultsAsync(string searchString);
 

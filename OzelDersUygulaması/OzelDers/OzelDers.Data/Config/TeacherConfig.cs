@@ -27,14 +27,6 @@ namespace OzelDers.Data.Config
 
 
             builder.Property<bool>(t => t.CertifiedTrainer);
-
-
-            builder.Property(t => t.Email)
-               .IsRequired()
-               .HasMaxLength(75);
-
-            builder.Property(t => t.Phone)
-               .IsRequired();
                
 
             builder.Property(t => t.FirstName)
@@ -45,26 +37,31 @@ namespace OzelDers.Data.Config
              .IsRequired()
              .HasMaxLength(75);
 
-            builder.Property(t => t.Description)
-                .IsRequired();
+            builder.Property(t => t.UserName);
 
-            builder.Property<int>(t => t.Age)
-                .IsRequired();
+            builder.Property(t => t.Email);
+            builder.Property<bool>(t => t.EmailConfirmed);
 
-            builder.Property(t => t.Gender)
-                .IsRequired()
+
+
+
+            builder.Property(t => t.Description);
+
+
+            builder.Property<int>(t => t.Age);
+                
+
+            builder.Property(t => t.Gender)                
                 .HasMaxLength(5);
 
             builder.Property(t => t.ImageUrl)
-                .IsRequired()
                 .HasMaxLength(250);
 
             builder.Property(t => t.Location)
-                .IsRequired()
                 .HasMaxLength(200);
 
             builder.Property(t => t.Url)
-                .IsRequired()
+                
                 .HasMaxLength(200);
             
 
@@ -78,8 +75,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 800,
                     IsFacetoFace = false,
                     CertifiedTrainer = true,
-                    Email = "jackbrand@ozelders.com",
-                    Phone="0543 755 8282",
                     FirstName = "Jack",
                     LastName = "Brand",
                     Description = "Engish lessons are given.",
@@ -97,8 +92,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 400,
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
-                    Email = "sevgiozer@ozelders.com",
-                    Phone = "0543 855 8282",
                     FirstName = "Sevgi",
                     LastName = "Özer",
                     Description = "Fizik dersi verilir.",
@@ -116,8 +109,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 600,
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
-                    Email = "denizkuru@ozelders.com",
-                    Phone = "0543 455 8282",
                     FirstName = "Deniz",
                     LastName = "Kuru",
                     Description = "Matematik dersi verilir.",
@@ -135,8 +126,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 650,
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
-                    Email = "fıratgoren@ozelders.com",
-                    Phone = "0543 755 4545",
                     FirstName = "Fırat",
                     LastName = "Gören",
                     Description = "Kimya dersi verilir.",
@@ -154,8 +143,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 400,
                     IsFacetoFace = true,
                     CertifiedTrainer = false,
-                    Email = "kemaleren@ozelders.com",
-                    Phone = "0535 755 8282",
                     FirstName = "Kemal",
                     LastName = "Eren",
                     Description = "C# dersi verilir.",
@@ -173,8 +160,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 600,
                     IsFacetoFace = true,
                     CertifiedTrainer = true,
-                    Email = "melissusan@ozelders.com",
-                    Phone = "0548 755 8282",
                     FirstName = "Melis",
                     LastName = "Susan",
                     Description = "Edebiyat dersi verilir.",
@@ -191,8 +176,6 @@ namespace OzelDers.Data.Config
                     HourlyPrice = 500,
                     IsFacetoFace = false,
                     CertifiedTrainer = true,
-                    Email = "defnebilen@ozelders.com",
-                    Phone = "0543 755 7235",
                     FirstName = "Defne",
                     LastName = "Bilen",
                     Description = "Almanca dersi verilir.",

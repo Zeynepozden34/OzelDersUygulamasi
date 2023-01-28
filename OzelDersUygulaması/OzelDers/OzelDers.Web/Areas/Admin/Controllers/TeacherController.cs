@@ -51,8 +51,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                         HourlyPrice = teacher.HourlyPrice,
                         IsFacetoFace = teacher.IsFacetoFace,
                         CertifiedTrainer = teacher.CertifiedTrainer,
-                        Email = teacher.Email,
-                        Phone = teacher.Phone,
                         FirstName = teacher.FirstName,
                         LastName = teacher.LastName,
                         Description = teacher.Description,
@@ -77,13 +75,13 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             return View(teacherListDtos);
 
         }
-        public async Task<IActionResult> TeacherDetails(string url)
+        public async Task<IActionResult> TeacherDetails(int id)
         {
-            if (url == null)
+            if (id == null)
             {
                 return NotFound();
             }
-            var teacher = await _teacherManager.GetTeacherDetailsByUrlAsync(url);
+            var teacher = await _teacherManager.GetTeacherDetailsByIdAsync(id);
             TeacherDetailsDto teacherDetailsDtos = new TeacherDetailsDto
             {
                 Id = teacher.Id,
@@ -91,8 +89,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 HourlyPrice = teacher.HourlyPrice,
                 IsFacetoFace = teacher.IsFacetoFace,
                 CertifiedTrainer = teacher.CertifiedTrainer,
-                Email = teacher.Email,
-                Phone = teacher.Phone,
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Description = teacher.Description,
@@ -142,7 +138,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                     FirstName = teacherAddDto.FirstName,
                     LastName = teacherAddDto.LastName,
                     Email = teacherAddDto.Email,
-                    UserName = (teacherAddDto.FirstName + teacherAddDto.LastName).ToLower()
+                    EmailConfirmed=true,
+                    UserName = teacherAddDto.UserName
 
                 };
                 var result = await _userManager.CreateAsync(user, "Qwe123.");
@@ -156,10 +153,8 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                         LastName = teacherAddDto.LastName,
                         UniverstyGraduatedFrom = teacherAddDto.UniverstyGraduatedFrom,
                         HourlyPrice = teacherAddDto.HourlyPrice,
-                        Email = teacherAddDto.Email,
                         Age = teacherAddDto.Age,
                         Gender = teacherAddDto.Gender,
-                        Phone = teacherAddDto.Phone,
                         Description = teacherAddDto.Description,
                         Location = teacherAddDto.Location,
                         Url = url,
@@ -204,13 +199,11 @@ namespace OzelDers.Web.Areas.Admin.Controllers
             var teacher = await _teacherManager.GetTeacherWithAll(id);
             TeacherUpdateDto teacherUpdateDto = new TeacherUpdateDto
             {
-                Id = teacher.Id,
+                UserId = teacher.Id,
                 UniverstyGraduatedFrom = teacher.UniverstyGraduatedFrom,
                 HourlyPrice = teacher.HourlyPrice,
                 IsFacetoFace = teacher.IsFacetoFace,
                 CertifiedTrainer = teacher.CertifiedTrainer,
-                Email = teacher.Email,
-                Phone = teacher.Phone,
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Description = teacher.Description,
@@ -251,8 +244,6 @@ namespace OzelDers.Web.Areas.Admin.Controllers
                 teacher.HourlyPrice = teacherUpdateDto.HourlyPrice;
                 teacher.IsFacetoFace = teacherUpdateDto.IsFacetoFace;
                 teacher.CertifiedTrainer = teacherUpdateDto.CertifiedTrainer;
-                teacher.Email = teacherUpdateDto.Email;
-                teacher.Phone = teacherUpdateDto.Phone;
                 teacher.FirstName = teacherUpdateDto.FirstName;
                 teacher.LastName = teacherUpdateDto.LastName;
                 teacher.Description = teacherUpdateDto.Description;

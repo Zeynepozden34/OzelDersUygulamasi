@@ -2,6 +2,7 @@
 using OzelDers.Data.Abstract;
 using OzelDers.Data.Concrete.EfCore.Contexts;
 using OzelDers.Entity.Concrete;
+using OzelDers.Entity.Concrete.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,12 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
             await OzelDersContext.SaveChangesAsync();
         }
 
+        public async Task CreateTeacherAsync(Teacher teacher)
+        {
+            await OzelDersContext.Teachers.AddAsync(teacher);
+            await OzelDersContext.SaveChangesAsync();
+        }
+
         public async Task<List<Teacher>> GetByIdBranch(int id)
         {
             return await OzelDersContext
@@ -54,7 +61,7 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
         {
             searchString = searchString.ToLower();
             var result = OzelDersContext.Teachers.Include(t => t.TeacherAndBranches).ThenInclude(tb => tb.Branch).AsQueryable();
-            return await result.Where(p => p.FirstName.ToLower().Contains(searchString) || p.Description.ToLower().Contains(searchString))
+            return await result.Where(p => p.FirstName.ToLower().Contains(searchString) || p.Description.ToLower().Contains(searchString) || p.LastName.ToLower().Contains(searchString))
               .ToListAsync();
 
         }
@@ -70,6 +77,18 @@ namespace OzelDers.Data.Concrete.EfCore.Repositories
                     .Where(p => p.TeacherAndBranches.Any(pc => pc.Branch.Url == branchurl));
             }
             return await teachers.ToListAsync();
+        }
+
+        public async Task<Teacher> GetTeacherDetailsByIdAsync(int id)
+        {
+            return await OzelDersContext
+               .Teachers
+               .Where(t => t.Id == id)
+               .Include(t => t.TeacherAndBranches)
+               .ThenInclude(tab => tab.Branch)
+               .Include(t => t.StudentAndTeachers)
+               .ThenInclude(tas => tas.Student)
+               .FirstOrDefaultAsync();
         }
 
         public async Task<Teacher> GetTeacherDetailsByUrlAsync(string url)

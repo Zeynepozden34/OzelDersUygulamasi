@@ -1,6 +1,7 @@
 ﻿using OzelDers.Entity.Concrete;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using OzelDers.Entity.Concrete.Identity;
 
 namespace OzelDers.Web.Areas.Admin.Models.Dtos
 {
@@ -78,5 +79,7 @@ namespace OzelDers.Web.Areas.Admin.Models.Dtos
 
         [DisplayName("Öğrenciler")]
         public List<Student> Students { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

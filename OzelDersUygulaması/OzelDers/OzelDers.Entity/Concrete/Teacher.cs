@@ -18,10 +18,11 @@ namespace OzelDers.Entity.Concrete
         public bool CertifiedTrainer { get; set; }
         public List<TeacherAndBranch> TeacherAndBranches { get; set; }
         public List<StudentAndTeacher> StudentAndTeachers { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string UserName { get; set; }
+        public string  Email { get; set; }
+        public bool EmailConfirmed { get; set; }
         public string Description { get; set; }
         public int Age { get; set; }
         public string Gender { get; set; }

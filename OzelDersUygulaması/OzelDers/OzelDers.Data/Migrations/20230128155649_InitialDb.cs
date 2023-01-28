@@ -185,14 +185,15 @@ namespace OzelDers.Data.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     FirstName = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
                     LastName = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
-                    Description = table.Column<string>(type: "TEXT", maxLength: 13, nullable: false),
-                    Email = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
-                    Phone = table.Column<string>(type: "TEXT", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", maxLength: 13, nullable: true),
                     Age = table.Column<int>(type: "INTEGER", nullable: false),
-                    Gender = table.Column<string>(type: "TEXT", maxLength: 5, nullable: false),
-                    Url = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
-                    ImageUrl = table.Column<string>(type: "TEXT", maxLength: 250, nullable: false),
-                    Location = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
+                    Gender = table.Column<string>(type: "TEXT", maxLength: 5, nullable: true),
+                    Url = table.Column<string>(type: "TEXT", maxLength: 200, nullable: true),
+                    ImageUrl = table.Column<string>(type: "TEXT", maxLength: 250, nullable: true),
+                    Location = table.Column<string>(type: "TEXT", maxLength: 200, nullable: true),
                     UserId = table.Column<string>(type: "TEXT", nullable: true),
                     DateAdded = table.Column<DateTime>(type: "TEXT", nullable: false),
                     IsDeleted = table.Column<bool>(type: "INTEGER", nullable: false)
@@ -217,16 +218,17 @@ namespace OzelDers.Data.Migrations
                     HourlyPrice = table.Column<int>(type: "INTEGER", nullable: false),
                     IsFacetoFace = table.Column<bool>(type: "INTEGER", nullable: false),
                     CertifiedTrainer = table.Column<bool>(type: "INTEGER", nullable: false),
-                    Email = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
-                    Phone = table.Column<string>(type: "TEXT", nullable: false),
                     FirstName = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
                     LastName = table.Column<string>(type: "TEXT", maxLength: 75, nullable: false),
-                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
                     Age = table.Column<int>(type: "INTEGER", nullable: false),
-                    Gender = table.Column<string>(type: "TEXT", maxLength: 5, nullable: false),
-                    Url = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
-                    ImageUrl = table.Column<string>(type: "TEXT", maxLength: 250, nullable: false),
-                    Location = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
+                    Gender = table.Column<string>(type: "TEXT", maxLength: 5, nullable: true),
+                    Url = table.Column<string>(type: "TEXT", maxLength: 200, nullable: true),
+                    ImageUrl = table.Column<string>(type: "TEXT", maxLength: 250, nullable: true),
+                    Location = table.Column<string>(type: "TEXT", maxLength: 200, nullable: true),
                     UserId = table.Column<string>(type: "TEXT", nullable: true),
                     DateAdded = table.Column<DateTime>(type: "TEXT", nullable: false),
                     IsDeleted = table.Column<bool>(type: "INTEGER", nullable: false)
@@ -294,10 +296,10 @@ namespace OzelDers.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "065c66cd-1c14-4c6a-87aa-d03e768027ac", null, null, "Student", "STUDENT" },
-                    { "3383e82d-1809-4990-a29a-2caef97e7d56", null, null, "Admin", "ADMIN" },
-                    { "709ba7a3-877f-42ac-b926-be0fe9338dfd", null, null, "Teacher", "TEACHER" },
-                    { "77b145e6-90f8-4254-b420-7598b079d5d0", null, null, "User", "USER" }
+                    { "6b5fe4a2-5e02-4641-a671-5001260b0419", null, null, "User", "USER" },
+                    { "8689f964-57da-4fe3-a0ee-562625e5366c", null, null, "Teacher", "TEACHER" },
+                    { "bc054144-d606-47f8-a543-5b0d4b3a94dc", null, null, "Student", "STUDENT" },
+                    { "ee25e13f-5eb8-4d39-9310-c92c669a1f4f", null, null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -305,10 +307,10 @@ namespace OzelDers.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "Gender", "LastName", "Location", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "33a2a1c3-ba58-4881-92c1-9185c4e901e7", 0, "a7eb45c8-f2f0-4f72-9d64-92ae81945fcd", "teacher@gmail.com", true, "Defne", "Kadın", "Teacher", "Ankara", false, null, "TEACHER@GMAIL.COM", "TEACHER", "AQAAAAIAAYagAAAAEO+5mNCmnozjgt/GxgVPgLL8ef6tOHjXkZndFLgMCAsoUD4fvjRk/pviZznifaRg6w==", "4444444455", false, "33068a8f-2861-478d-b028-a5c09c7e8da1", false, "teacher" },
-                    { "5b75301c-6dd3-47b8-92dd-8290e877ac8a", 0, "054095c7-4dc4-4c04-8da7-92850a93542e", "student@gmail.com", true, "Yusuf", "Erkek", "Student", "Ankara", false, null, "STUDENT@GMAIL.COM", "STUDENT", "AQAAAAIAAYagAAAAEIxEY7wFOQVYQeAAvA97pVuhbnDeRK4mVtYsGZn143RlGtOrngTfIcKsPRy3QUeKsg==", "5554444444", false, "cfdfb290-5695-4351-94bf-e21cc5f55c5e", false, "student" },
-                    { "eb46bb5a-e294-4b38-8dca-a203c7c2686d", 0, "01bc1cbe-9181-4869-8ea4-4f09f47af947", "admin@gmail.com", true, "Deniz", "Kadın", "Admin", "İstanbul", false, null, "ADMIN@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEFZXM/ti16pTw7IPMrjfrR9GsLwBbJtRxByHnSRzBQMeOH/pYT/LVFzuueII3HcmGg==", "5555555555", false, "c1b108e6-a717-4544-9acb-a3c1fd9e6d81", false, "admin" },
-                    { "f56c5be6-af7c-4638-a9f0-8bc8daf276be", 0, "b675579d-495d-4d22-87ec-f0ae70bba3c5", "user@gmail.com", true, "Kemal", "Erkek", "User", "Ankara", false, null, "USER@GMAIL.COM", "USER", "AQAAAAIAAYagAAAAEHvQSw6phnVfVFPrcd7y/Y1EPh2s8viTxe8qxa3yKRYpomkg+ENXc34o1d/ZoyHoag==", "4444444444", false, "314bfede-04b3-4352-ac81-2856c4085f7c", false, "user" }
+                    { "5624bc97-0363-4c5a-b9c8-307308768960", 0, "3e31efb5-30fe-4c63-958b-624f1c2b9acd", "teacher@gmail.com", true, "Defne", "Kadın", "Teacher", "Ankara", false, null, "TEACHER@GMAIL.COM", "TEACHER", "AQAAAAIAAYagAAAAEIGOe+hZebcHkAEWXB/igBqrNViw7HSJrBIcZU0XsUD6bPGxImvGoBDutxwJ14gq/g==", "4444444455", false, "87db6b2f-164b-427a-aeeb-f64e5bdade65", false, "teacher" },
+                    { "93107d37-7509-417c-92e4-e5aa42a7a524", 0, "9f607bf9-2bc9-4fdc-82e8-9283ead32013", "user@gmail.com", true, "Kemal", "Erkek", "User", "Ankara", false, null, "USER@GMAIL.COM", "USER", "AQAAAAIAAYagAAAAELQvwnz2v32FTEC5HuTgAaLWRS7N0McbV+oh8iwu2sG4HT3v4Y5ZhaUohkxkzqoY/w==", "4444444444", false, "a936c1a3-1e16-4249-8a3d-a3333a6a6369", false, "user" },
+                    { "a9015798-5482-495f-b550-03078d416859", 0, "63d0913a-9bc6-4dfd-acf2-f2f82a51be0a", "admin@gmail.com", true, "Deniz", "Kadın", "Admin", "İstanbul", false, null, "ADMIN@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEL4jDVqKV0twaky9czKgobgGOzJ7+NV710qAmBZRRk6HAM59NZS9D55ztCKng4/x1g==", "5555555555", false, "675b19cb-cadf-46b7-903b-2e3741c9a4aa", false, "admin" },
+                    { "c88ad64a-8c16-4e26-a062-1511d0af7ab8", 0, "7a379521-05e9-4d56-a700-5f4c05b3f840", "student@gmail.com", true, "Yusuf", "Erkek", "Student", "Ankara", false, null, "STUDENT@GMAIL.COM", "STUDENT", "AQAAAAIAAYagAAAAEBt8XfLqC2K3nvECeDRWqYEv9OKJlVbFf4taxA61cffl/RIQk7YMnr/7HNc+Wc8BlA==", "5554444444", false, "3d860de1-9ee9-417e-ad3d-64ef1f48eada", false, "student" }
                 });
 
             migrationBuilder.InsertData(
@@ -330,34 +332,34 @@ namespace OzelDers.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Students",
-                columns: new[] { "Id", "Age", "DateAdded", "Description", "Email", "FirstName", "Gender", "ImageUrl", "IsDeleted", "LastName", "Location", "Phone", "Url", "UserId" },
+                columns: new[] { "Id", "Age", "DateAdded", "Description", "Email", "EmailConfirmed", "FirstName", "Gender", "ImageUrl", "IsDeleted", "LastName", "Location", "Url", "UserId", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 17, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", "selimdurmus@ogrenci.com", "Selim", "erkek", "1.png", false, "Durmuş", "Üsküdar/İstanbul", "0547 888 1520", "selimdurmus", null },
-                    { 2, 18, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Hazırlık Öğrencisi", "defnegormus@ogrenci.com", "Defne", "kız", "2.png", false, "Görmüş", "Çankaya/Ankara", "0547 888 1527", "defnegormus", null },
-                    { 3, 21, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", "hazalkara@ogrenci.com", "Hazal", "kız", "3.png", false, "Kara", "Çukurova/Adana", "0547 555 1520", "hazalkara", null },
-                    { 4, 23, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", "gozdeceken@ogrenci.com", "Gözde", "kız", "4.png", false, "Çeken", "Bahçelievler/İstanbul", "0535 888 1520", "gozdeceken", null },
-                    { 5, 17, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", "huseyinkazanmış@ogrenci.com", "Hüseyin", "erkek", "5.png", false, "Kazanmış", "Küçükçekmece/İstanbul", "0547 878 1520", "huseyinkazanmıs", null },
-                    { 6, 16, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", "bilaltelli@ogrenci.com", "Bilal", "erkek", "6.png", false, "Telli", "Bornova/İzmir", "0547 888 1820", "bilaltelli", null },
-                    { 7, 15, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", "yunusdeniz@ogrenci.com", "Yunus", "erkek", "7.png", false, "Deniz", "İzmit/Kocaeli", "0547 456 1520", "denizyunus", null },
-                    { 8, 18, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Hazırlık Öğrencisi", "cemrekıran@ogrenci.com", "Cemre", "kadın", "8.png", false, "Kıran", "Üsküdar/İstanbul", "0488 888 1520", "cemrekıran", null },
-                    { 9, 19, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", "yusufgüzel@ogrenci.com", "Yusuf", "erkek", "9.png", false, "Güzel", "Yüreğir/Adana", "0547 222 1520", "yusufguzel", null },
-                    { 10, 19, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", "harunbulut@ogrenci.com", "Harun", "erkek", "10.png", false, "Bulut", "İskenderun/Hatay", "0547 888 1827", "harunbulut", null },
-                    { 11, 20, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", "yıldızmutlu@ogrenci.com", "Yıldız", "kız", "11.png", false, "Mutlu", "Pendik/İstanbul", "0547 888 2282", "yıldızmutlu", null }
+                    { 1, 17, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", null, false, "Selim", "erkek", "1.png", false, "Durmuş", "Üsküdar/İstanbul", "selimdurmus", null, null },
+                    { 2, 18, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Hazırlık Öğrencisi", null, false, "Defne", "kız", "2.png", false, "Görmüş", "Çankaya/Ankara", "defnegormus", null, null },
+                    { 3, 21, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", null, false, "Hazal", "kız", "3.png", false, "Kara", "Çukurova/Adana", "hazalkara", null, null },
+                    { 4, 23, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", null, false, "Gözde", "kız", "4.png", false, "Çeken", "Bahçelievler/İstanbul", "gozdeceken", null, null },
+                    { 5, 17, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", null, false, "Hüseyin", "erkek", "5.png", false, "Kazanmış", "Küçükçekmece/İstanbul", "huseyinkazanmıs", null, null },
+                    { 6, 16, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", null, false, "Bilal", "erkek", "6.png", false, "Telli", "Bornova/İzmir", "bilaltelli", null, null },
+                    { 7, 15, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Lise Öğrencisi", null, false, "Yunus", "erkek", "7.png", false, "Deniz", "İzmit/Kocaeli", "denizyunus", null, null },
+                    { 8, 18, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Hazırlık Öğrencisi", null, false, "Cemre", "kadın", "8.png", false, "Kıran", "Üsküdar/İstanbul", "cemrekıran", null, null },
+                    { 9, 19, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", null, false, "Yusuf", "erkek", "9.png", false, "Güzel", "Yüreğir/Adana", "yusufguzel", null, null },
+                    { 10, 19, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", null, false, "Harun", "erkek", "10.png", false, "Bulut", "İskenderun/Hatay", "harunbulut", null, null },
+                    { 11, 20, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Üniversite Öğrencisi", null, false, "Yıldız", "kız", "11.png", false, "Mutlu", "Pendik/İstanbul", "yıldızmutlu", null, null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Teachers",
-                columns: new[] { "Id", "Age", "CertifiedTrainer", "DateAdded", "Description", "Email", "FirstName", "Gender", "HourlyPrice", "ImageUrl", "IsDeleted", "IsFacetoFace", "LastName", "Location", "Phone", "UniverstyGraduatedFrom", "Url", "UserId" },
+                columns: new[] { "Id", "Age", "CertifiedTrainer", "DateAdded", "Description", "Email", "EmailConfirmed", "FirstName", "Gender", "HourlyPrice", "ImageUrl", "IsDeleted", "IsFacetoFace", "LastName", "Location", "UniverstyGraduatedFrom", "Url", "UserId", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 27, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Engish lessons are given.", "jackbrand@ozelders.com", "Jack", "erkek", 800, "20.png", false, false, "Brand", "Toronto/Canada", "0543 755 8282", "Cambridge University", "jackbrand", null },
-                    { 2, 27, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fizik dersi verilir.", "sevgiozer@ozelders.com", "Sevgi", "kadın", 400, "21.png", false, true, "Özer", "Avcılar/İstanbul", "0543 855 8282", "İstanbul Üniversitesi", "sevgiozer", null },
-                    { 3, 35, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Matematik dersi verilir.", "denizkuru@ozelders.com", "Deniz", "kadın", 600, "22.png", false, true, "Kuru", "Avcılar/İstanbul", "0543 455 8282", "Fırat Üniversitesi", "denizkuru", null },
-                    { 4, 30, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kimya dersi verilir.", "fıratgoren@ozelders.com", "Fırat", "erkek", 650, "23.png", false, true, "Gören", "Çankaya/Ankara", "0543 755 4545", "Marmara Üniversitesi", "fıratgören", null },
-                    { 5, 40, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C# dersi verilir.", "kemaleren@ozelders.com", "Kemal", "erkek", 400, "24.png", false, true, "Eren", "Bornova/İzmir", "0535 755 8282", "Fırat Üniversitesi", "kemaleren", null },
-                    { 6, 25, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Edebiyat dersi verilir.", "melissusan@ozelders.com", "Melis", "kadın", 600, "25.png", false, true, "Susan", "Sefaköy/İstanbul", "0548 755 8282", "İstanbul Üniversitesi", "melissusan", null },
-                    { 7, 34, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Almanca dersi verilir.", "defnebilen@ozelders.com", "Defne", "kadın", 500, "26.png", false, false, "Bilen", "Buca/İzmir", "0543 755 7235", "Dokuz Eylül Üniversitesi", "defnebilen", null }
+                    { 1, 27, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Engish lessons are given.", null, false, "Jack", "erkek", 800, "20.png", false, false, "Brand", "Toronto/Canada", "Cambridge University", "jackbrand", null, null },
+                    { 2, 27, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Fizik dersi verilir.", null, false, "Sevgi", "kadın", 400, "21.png", false, true, "Özer", "Avcılar/İstanbul", "İstanbul Üniversitesi", "sevgiozer", null, null },
+                    { 3, 35, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Matematik dersi verilir.", null, false, "Deniz", "kadın", 600, "22.png", false, true, "Kuru", "Avcılar/İstanbul", "Fırat Üniversitesi", "denizkuru", null, null },
+                    { 4, 30, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kimya dersi verilir.", null, false, "Fırat", "erkek", 650, "23.png", false, true, "Gören", "Çankaya/Ankara", "Marmara Üniversitesi", "fıratgören", null, null },
+                    { 5, 40, false, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "C# dersi verilir.", null, false, "Kemal", "erkek", 400, "24.png", false, true, "Eren", "Bornova/İzmir", "Fırat Üniversitesi", "kemaleren", null, null },
+                    { 6, 25, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Edebiyat dersi verilir.", null, false, "Melis", "kadın", 600, "25.png", false, true, "Susan", "Sefaköy/İstanbul", "İstanbul Üniversitesi", "melissusan", null, null },
+                    { 7, 34, true, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Almanca dersi verilir.", null, false, "Defne", "kadın", 500, "26.png", false, false, "Bilen", "Buca/İzmir", "Dokuz Eylül Üniversitesi", "defnebilen", null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -365,10 +367,10 @@ namespace OzelDers.Data.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "33a2a1c3-ba58-4881-92c1-9185c4e901e7" },
-                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "5b75301c-6dd3-47b8-92dd-8290e877ac8a" },
-                    { "3383e82d-1809-4990-a29a-2caef97e7d56", "eb46bb5a-e294-4b38-8dca-a203c7c2686d" },
-                    { "77b145e6-90f8-4254-b420-7598b079d5d0", "f56c5be6-af7c-4638-a9f0-8bc8daf276be" }
+                    { "6b5fe4a2-5e02-4641-a671-5001260b0419", "5624bc97-0363-4c5a-b9c8-307308768960" },
+                    { "6b5fe4a2-5e02-4641-a671-5001260b0419", "93107d37-7509-417c-92e4-e5aa42a7a524" },
+                    { "ee25e13f-5eb8-4d39-9310-c92c669a1f4f", "a9015798-5482-495f-b550-03078d416859" },
+                    { "6b5fe4a2-5e02-4641-a671-5001260b0419", "c88ad64a-8c16-4e26-a062-1511d0af7ab8" }
                 });
 
             migrationBuilder.InsertData(
